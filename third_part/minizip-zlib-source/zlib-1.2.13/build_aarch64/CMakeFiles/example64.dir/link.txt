@@ -1,0 +1,1 @@
+/home/cuke/xjl_work/soft/arm_linux_compile_tool/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc   -rdynamic CMakeFiles/example64.dir/test/example.o  -o example64  -Wl,-rpath,/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64 libz.so.1.2.13 

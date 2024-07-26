@@ -1,0 +1,95 @@
+{
+    "code": "000000",
+    "data": {
+        "config": {
+            "DVR": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "IDCM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "UMA": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "RVM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "DLP": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "TBOX": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "VDCM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "CGW": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "VSP": {
+                "enable": 0,
+                "level": "INFO"
+            },
+            "ARC": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "APA": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "BDCM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "ADCM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "FSEM": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "LIDAR-1": {
+                "enable": 0,
+                "level": "INFO"
+            },
+            "RAC": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "NFCG": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "ARHUD": {
+                "enable": 0,
+                "level": "INFO"
+            },
+            "OTA": {
+                "enable": 1,
+                "level": "INFO"
+            },
+            "DSM": {
+                "enable": 1,
+                "level": "INFO"
+            }
+        },
+        "configUpdateTime": "2022-11-05 13:33:30",
+        "fileSize": 10000000,
+        "intervalTime": 1,
+        "rangeTimeEnd": "2032110513",
+        "rangeTimeStart": "2022110513",
+        "sn": "HRYTTESTVINID0270",
+        "vin": "HRYTTESTVINMGM270"
+    },
+    "msg": "SUCCESS"
+}

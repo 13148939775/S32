@@ -1,0 +1,13 @@
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/install/local.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/install.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/list_install_components.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/rebuild_cache.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/edit_cache.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/test.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/install/strip.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/example64.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/minigzip.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/example.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/zlibstatic.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/minigzip64.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86/CMakeFiles/zlib.dir

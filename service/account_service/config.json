@@ -1,0 +1,8 @@
+{
+	"MQTT_SERVER_ADDRESS": "tcp://10.131.129.226:1883",
+	"MQTT_CLIENT_ID": "HRYTTESTVINMGM270",
+	"MQTT_TOPIC": "tsp_idcm_HRYTTESTVINMGM270_dev",
+	"MQTT_USER_NAME": "messagecenterdev",
+	"MQTT_PASSWORD": "public",
+	"DB_NAME": "account_service.db"
+}

@@ -1,0 +1,11 @@
+{
+    "url":"https://iovcloud-test.human-horizons.com:30593/cloud-virtualplatform-service/v1/tsp-vcp/uploadExeResult/v1.0.0",
+    "path":"/cloud-virtualplatform-service/v1/tsp-vcp/uploadExeResult/v1.0.0",
+    "serialNo":"6aef4d94a4c44dbdbbfca5ff4e9d691b",
+    "actionType":1,
+    "sceneId":"6aef4d94a4c44dbdbbfca5ff4e9d691b",
+    "startTime":"2023-01-01 09:05:05",
+    "endTime":"2023-01-01 09:05:05",
+    "result":0,
+    "exeDetail":"0"
+}

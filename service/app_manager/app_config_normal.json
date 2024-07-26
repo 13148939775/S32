@@ -1,0 +1,56 @@
+{
+    "versionInfo": {
+        "version": 1.0,
+        "date": 2023327,
+        "TotalCategories" : 8
+      },
+    "tracks" : [
+      {
+        "name" : "ntpdate",
+        "path" : "/home/root/sysbin/app/ntpdate",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "DDSClient",
+        "path" : "/home/root/sysbin/app/DDSClient",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "LogService",
+        "path" : "/home/root/sysbin/service/LogService",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "VehicleControlService",
+        "path" : "/home/root/sysbin/app/VehicleControlService",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "iox-roudi-deamon-service",
+        "path" : "/home/root/sysbin/app/iox-roudi-deamon-service",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "logupload",
+        "path" : "/home/root/sysbin/app/logupload",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "CCCEntry",
+        "path" : "/home/root/sysbin/app/CCCEntry",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "netConfigService",
+        "path" : "/home/root/sysbin/app/netConfigService",
+        "bootTimeLimit" : 800
+      },
+      {
+        "name" : "AccountService",
+        "path" : "/home/root/sysbin/app/AccountService",
+        "bootTimeLimit" : 800
+      }
+      ]
+}
+
+

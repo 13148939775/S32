@@ -1,0 +1,8 @@
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib/libz.so.1.2.13
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib/libz.so.1
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib/libz.so
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib/libz.a
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/include/zconf.h
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/include/zlib.h
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/share/man/man3/zlib.3
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/share/pkgconfig/zlib.pc

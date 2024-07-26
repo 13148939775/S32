@@ -1,0 +1,34 @@
+{
+    "Meta2Topic": [
+        {
+            "MetaAbility": "Function-FUNCTION_SEAT_FRONT_LEFT_MEMEORY_EXPORT",
+            "Topic": "HDBI_DrLth_Set",
+            "Position": 0
+        },
+        {
+            "MetaAbility": "Function-FUNCTION_HIPHI_DELAY",
+            "Topic": "HDBI_DrLth_Act",
+            "Position": 1
+        },
+        {
+            "MetaAbility": "Function-ACM_FRAGCONCCTRL",
+            "Topic": "HDBI_InLt_Act",
+            "Position": 2
+        },
+        {
+            "MetaAbility": "Function -FUNCTION_FRAG_CHANNEL_SWITCH",
+            "Topic": "HDBI_WinPct_Act",
+            "Position": 3
+        },
+        {
+            "MetaAbility": "Function-FUNCTION_SEAT_FRONT_LEFT_MEMEORY_EXPORT",
+            "Topic": "HDBI_StAdj_Act",
+            "Position": 4
+        },
+        {
+            "MetaAbility": "Function-FUNCTION_IDCM_BRIGHTNESS",
+            "Topic": "HDBI_BdPst_Act",
+            "Position": 5
+        }
+    ]
+}

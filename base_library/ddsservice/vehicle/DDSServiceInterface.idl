@@ -1,0 +1,28 @@
+struct DDSCommandSet_struct {
+	uint16 code;
+	uint16 subcode;
+	char ctrSource[64];
+	char commBuffer[256];
+};
+
+struct DDSCommandRsp_struct {
+	uint16 code;
+	uint16 subcode;
+	char ctrSource[64];
+	char commBuffer[256];
+};
+
+
+struct DDSCommandAct_struct {
+	uint16 code;
+	uint16 subcode;
+	char ctrSource[64];
+	char commBuffer[256];
+};
+
+struct DDSCommandSt_struct {
+	uint16 code;
+	uint16 subcode;
+	char ctrSource[64];
+	char commBuffer[256];
+};

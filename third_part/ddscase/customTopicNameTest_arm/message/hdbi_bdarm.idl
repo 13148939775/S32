@@ -1,0 +1,21 @@
+struct HDBI_BdArm_Set_struct
+{
+    uint8 VehicleUnlock_Set;    //外部解锁设置
+    uint8 ReturnPYnlock_Set;    //回P解锁设置
+};
+struct HDBM_BdArm_Rsp_struct
+{
+    uint8 VehicleUnlock_Rsp;    //外部解锁反馈
+    uint8 ReturnPYnlock_Rsp;    //回P解锁反馈
+};
+
+struct HDBI_BdArm_Act_struct
+{
+    uint8 CenterLck_Act;        //中控锁执行请求
+};
+struct HDBM_BdArm_St_struct
+{
+    uint8 CenterLck_St;         //中控锁状态反馈
+    uint8 BodyBglAlarm_St;      //车身防盗状态
+    uint8 ExLckReq_St;          //外部闭锁请求状态
+};

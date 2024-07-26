@@ -1,0 +1,16 @@
+{
+    "AddrIpv4" : "*",
+    "StructruedPort" : 30505,
+    "UnstructruedPort" : 20000,
+    "RecoderMonitorPort" : 10040,
+    "StructruedChannelNum" : 1,
+    "StructruedFlushIntervalMs" : 500,
+    "UnstructruedFlushIntervalMs" : 500,
+    "UseStructruedData" : true,
+    "UseUnstructruedData" : true,
+    "InitUnstructuredData" : true,
+    "UseNoh" : false,
+    "UseUpload" : true,
+    "UseRecord" : true,
+    "RmHeartBeatTimeoutMs" : 5000
+}

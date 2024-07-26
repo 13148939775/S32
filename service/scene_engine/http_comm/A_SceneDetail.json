@@ -1,0 +1,9 @@
+{
+    "data": {
+        "url":"https://iovcloud-test.human-horizons.com:30593/cloud-virtualplatform-service/v1/scene/getSceneDetail/v1.0.0",
+        "path": "/cloud-virtualplatform-service/v1/scene/getSceneDetail/v1.0.0",
+        "vin": "HRYTTESTVINMGM270",
+        "sn": "HRYTTESTVINID0270",
+        "sceneIds":"a08729c7c3a345de8a1ab2e515a5aa59,a08729c7c3a345de8a1ab2e515a5aa59,a08729c7c3a345de8a1ab2e515a5aa59"
+    }
+}

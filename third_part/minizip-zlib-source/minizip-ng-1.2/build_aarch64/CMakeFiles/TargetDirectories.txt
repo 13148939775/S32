@@ -1,0 +1,3 @@
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/minizip-ng-1.2/build_aarch64/CMakeFiles/rebuild_cache.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/minizip-ng-1.2/build_aarch64/CMakeFiles/edit_cache.dir
+/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/minizip-ng-1.2/build_aarch64/CMakeFiles/minizip.dir

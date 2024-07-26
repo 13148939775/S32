@@ -1,0 +1,1404 @@
+module BodyDomain {
+  struct BdArm_Set_struct {
+    uint8 VehicleUnlock_Set;
+    uint8 ReturnPUnlock_Set;
+    uint8 AwayVclLck_Set;
+    uint8 CloseVclUnlck_Set;
+    string<10> CtrlSource;
+  };
+
+  struct BdArm_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct BdArm_Rsp_struct {
+    uint8 VehicleUnlock_Rsp;
+    uint8 ReturnPUnlock_Rsp;
+    uint8 AwayVclLck_Rsp;
+    uint8 CloseVclUnlck_Rsp;
+  };
+
+  struct BdArm_St_struct {
+    uint8 CenterLck_St;
+    uint8 BodyBglAlarm_St;
+    uint8 ExLckReq_St;
+  };
+
+  struct BdArm_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct BdArm_Ctrl_struct {
+    uint8 CenterLck_Act;
+    string<10> CtrlSource;
+  };
+
+  struct BdArm_Ctrl_SOA_struct {
+    uint8 BdArm_Ctrl_SOA_u8;
+  };
+
+  union BdArm_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::BdArm_Set_struct BdArm_Set;
+    case 1:     BodyDomain::BdArm_Get_struct BdArm_Get;
+    case 2:     BodyDomain::BdArm_Ctrl_struct BdArm_Ctrl;
+    case 3:     BodyDomain::BdArm_St_Get_struct BdArm_St_Get;
+  };
+
+  union BdArm_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::BdArm_Rsp_struct BdArm_Set_SOA;
+    case 1:     BodyDomain::BdArm_Rsp_struct BdArm_Get_SOA;
+    case 2:     BodyDomain::BdArm_Ctrl_SOA_struct BdArm_Ctrl_SOA;
+    case 3:     BodyDomain::BdArm_St_struct BdArm_St_Get_struct;
+  };
+
+  struct VsWsh_Set_struct {
+    uint8 FwiperSW_Set;
+    uint8 FwiperAutoSenst_Set;
+    string<10> CtrlSource;
+  };
+
+  struct VsWsh_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct VsWsh_Rsp_struct {
+    uint8 FwiperSW_Rsp;
+    uint8 FwiperAutoSenst_Rsp;
+  };
+
+  struct VsWsh_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct VsWsh_St_struct {
+    uint8 Fwiper_St;
+    uint8 WashLqdHgtWarn_St;
+    uint8 ExMirHt_Rsp;
+    uint8 FwiperSWDisplay_st;
+    uint8 RWndShldHt_Rsp;
+  };
+
+  struct VsWsh_Ctrl_struct {
+    uint8 FWiperSvcSW_Req;
+    uint8 ExMirHt_Req;
+    uint8 RWndShldHt_Req;
+    string<10> CtrlSource;
+  };
+
+  struct VsWsh_Ctrl_SOA_struct {
+    uint8 VsWsh_Ctrl_SOA_u8;
+  };
+
+  union VsWsh_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::VsWsh_Set_struct VsWsh_Set;
+    case 1:     BodyDomain::VsWsh_Get_struct VsWsh_Get;
+    case 2:     BodyDomain::VsWsh_Ctrl_struct VsWsh_Ctrl;
+    case 3:     BodyDomain::VsWsh_St_Get_struct VsWsh_St_Get;
+  };
+
+  union VsWsh_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::VsWsh_Rsp_struct VsWsh_Set_SOA;
+    case 1:     BodyDomain::VsWsh_Rsp_struct VsWsh_Get_SOA;
+    case 2:     BodyDomain::VsWsh_Ctrl_SOA_struct VsWsh_Ctrl_SOA;
+    case 3:     BodyDomain::VsWsh_St_struct VsWsh_St_Get_SOA;
+  };
+
+  struct SSd_Set_struct {
+    uint8 LockVoiWarn_Req;
+    uint8 LowSpdVoi_Set;
+    string<10> CtrlSource;
+  };
+
+  struct SSd_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct SSd_Rsp_struct {
+    uint8 LockVoiWarn_Rsp;
+    uint8 LowSpdVoi_Rsp;
+  };
+
+  union SSd_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::SSd_Set_struct SSd_Set;
+    case 1:     BodyDomain::SSd_Get_struct SSd_Get;
+  };
+
+  union SSd_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::SSd_Rsp_struct SSd_Set_SOA;
+    case 1:     BodyDomain::SSd_Rsp_struct SSd_Get_SOA;
+  };
+
+  struct Win_Set_struct {
+    uint8 LckCloseWin_Set;
+    uint8 RainCloseWin_Set;
+    string<10> CtrlSource;
+  };
+
+  struct Win_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct Win_Rsp_struct {
+    uint8 LckCloseWin_Rsp;
+    uint8 RainCloseWin_Rsp;
+  };
+
+  struct WinPct_Ctrl_struct {
+    uint8 FLWinPst_Act;
+    uint8 FRWinPst_Act;
+    uint8 RLWinPst_Act;
+    uint8 RRWinPst_Act;
+    uint8 WinFastCtl_Req;
+    string<10> CtrlSource;
+  };
+
+  struct WinPct_Ctrl_SOA_struct {
+    uint8 WinPct_Ctrl_SOA_u8;
+  };
+
+  struct Win_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct Win_St_struct {
+    uint8 FLWinPst_St;
+    uint8 FRWinPst_St;
+    uint8 RLWinPst_St;
+    uint8 RRWinPst_St;
+    uint8 FLWdwMov_St;
+    uint8 FRWdwMov_St;
+    uint8 RLWdwMov_St;
+    uint8 RRWdwMov_St;
+    uint8 FLWinStpRsn_St;
+    uint8 FRWinStpRsn_St;
+    uint8 RLWinStpRsn_St;
+    uint8 RRWinStpRsn_St;
+    uint8 AllWinClose_St;
+    uint8 AllWinOpen_St;
+    uint8 AllWinFrshAir_St;
+    uint8 WinVent_St;
+  };
+
+  union Win_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::Win_Set_struct Win_Set;
+    case 1:     BodyDomain::Win_Get_struct Win_Get;
+    case 2:     BodyDomain::WinPct_Ctrl_struct WinPct_Ctrl;
+    case 3:     BodyDomain::Win_St_Get_struct Win_St_Get;
+  };
+
+  union Win_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::Win_Rsp_struct Win_Set_SOA;
+    case 1:     BodyDomain::Win_Rsp_struct Win_Get_SOA;
+    case 2:     BodyDomain::WinPct_Ctrl_SOA_struct WinPct_Ctrl_SOA;
+    case 3:     BodyDomain::Win_St_struct Win_St_Get_SOA;
+  };
+
+  struct BdPst_Set_struct {
+    uint8 ExMirAutoTurnOver_Set;
+    uint8 ExMirFoldEn_Set;
+    uint8 ExMirUnfoldAlt_Set;
+    uint8 FLSeatWelcome_Set;
+    uint8 ExitVehicleMemory_Set;
+    string<10> CtrlSource;
+  };
+
+  struct BdPst_Get_struct {
+    uint8 BdPstSetBit;
+    string<10> CtrlSource;
+  };
+
+  struct BdPst_Rsp_struct {
+    uint8 ExMirAutoTurnOverSet_Rsp;
+    uint8 ExMirFoldEn_Rsp;
+    uint8 ExMirUnfoldAlt_Rsp;
+    uint8 FLSeatWelcome_Rsp;
+    uint8 ExitVehicleMemory_Rsp;
+  };
+
+  struct BdPst_Ctrl_struct {
+    uint8 ExMirCtrl_Act;
+    uint8 LExMirUDAdj_Act;
+    uint8 LExMirLRAdj_Act;
+    uint8 RExMirUDAdj_Act;
+    uint8 RExMirLRAdj_Act;
+    uint8 SteerTiltAdj_Act;
+    uint8 SteerTeleAdj_Act;
+    uint8 SteerLongStroke_Req;
+    uint8 FLMemPstExport_req;
+    uint8 FRMemPstExPort_req;
+    uint8 FLSeatPstMem_Req;
+    uint8 FRSeatPstMem_Req;
+    uint8 SteerTiltPst_Req;
+    uint8 SteerTelePst_Req;
+    uint8 LExMirUDPst_Req;
+    uint8 LExMirLRPst_Req;
+    uint8 RExMirUDPst_Req;
+    uint8 RExMirLRPst_Req;
+    string<10> CtrlSource;
+  };
+
+  struct BdPst_Ctrl_SOA_struct {
+    uint8 BdPst_Ctrl_SOA_u8;
+  };
+
+  struct BdPst_St_Get_struct {
+    uint16 BdPstBit;
+    string<10> CtrlSource;
+  };
+
+  struct FLMemPstExportRsp_struct {
+    uint8 FLSeatExportPst;
+    uint8 FLMemPstExportSt_Rsp;
+    uint8 FLMemPstExportMvSt_Rsp;
+    string<10> CtrlSource;
+  };
+
+  struct FRMemPstExportRsp_struct {
+    uint8 FRSeatExportPst;
+    uint8 FRMemPstExportSt_Rsp;
+    uint8 FRMemPstExportMvSt_Rsp;
+    string<10> CtrlSource;
+  };
+
+  struct BdPst_St_struct {
+    boolean ExMirCtrl_St;
+    uint8 LExMirUDMv_St;
+    uint8 LExMirLRMv_St;
+    uint8 RExMirUDMv_St;
+    uint8 RExMirLRMv_St;
+    uint8 SteerTiltMv_St;
+    uint8 SteerTeleMv_St;
+    uint8 LExMirCtrlMv_St;
+    uint8 RExMirCtrlMv_St;
+    uint8 SteerLongStrokeSt_Rsp;
+    uint8 SteerLongStrokeMoveSt_Rsp;
+    uint8 SteerLongStrokeStpRsn_Rsp;
+    uint8 FLSeatPstMemWin_Req;
+    uint8 FRSeatPstMemWin_Req;
+    uint8 SteerTiltPst_Rsp;
+    uint8 SteerTelePst_Rsp;
+    uint8 LExMirUDPst_Rsp;
+    uint8 LExMirLRPst_Rsp;
+    uint8 RExMirUDPst_Rsp;
+    uint8 RExMirLRPst_Rsp;
+    BodyDomain::FLMemPstExportRsp_struct FLMemPstExportRsp[5];
+    BodyDomain::FRMemPstExportRsp_struct FRMemPstExportRsp[4];
+  };
+
+  struct FLSeatMemPst_Req_struct {
+    uint8 FLSeatMemPstPurpose_Req;
+    uint8 FLSeatMemFBPst_Req;
+    uint8 FLSeatMemBackrestPst_Req;
+    uint8 FLSeatMemHgtPst_Req;
+    uint8 FLSeatMemCshnAngPst_Req;
+    uint8 FLMemLegAngCshnExtPst_Req;
+    uint8 FLSeatMemLegLengthPst_Req;
+  };
+
+  struct FRSeatMemPst_Req_struct {
+    uint8 FRSeatPstPurpose_Req;
+    uint8 FRSeatMemFBPst_Req;
+    uint8 FRSeatMemBackrestPst_Req;
+    uint8 FRSeatMemHgtPst_Req;
+    uint8 FRSeatMemCshnAngPst_Req;
+    uint8 FRSeatMemLegAngCshnExtPst_Req;
+    uint8 FRSeatMemLegLengthPst_Req;
+  };
+
+  struct SRLSeatMemPst_Req_struct {
+    uint8 SRLSeatMemPstPurpose_Req;
+    uint8 SRLSeatMemFBPst_Req;
+    uint8 SRLSeatMemBackrestPst_Req;
+    uint8 SRLSeatMemHgtPst_Req;
+    uint8 SRLSeatMemCshnAngPst_Req;
+    uint8 SRLSeatMemLegAngCshnExtPst_Req;
+  };
+
+  struct SRRSeatMemPst_Req_struct {
+    uint8 SRRSeatMemPstPurpose_Req;
+    uint8 SRRSeatMemFBPst_Req;
+    uint8 SRRSeatMemBackrestPst_Req;
+    uint8 SRRSeatMemHgtPst_Req;
+    uint8 SRRSeatMemCshnAngPst_Req;
+    uint8 SRRSeatMemLegAngCshnExtPst_Req;
+  };
+
+  struct SteerMemPst_Req_struct {
+    uint8 SteerMemPstPurpose_Req;
+    uint8 SteerMemTiltPst_Req;
+    uint8 SteerMemTelePst_Req;
+  };
+
+  struct LExMirMemLRPst_Req_struct {
+    uint8 LExMirMemUDPst_Req;
+    uint8 LExMirMemLRPst_Req;
+    uint8 LExMirMemLRPstPurpose_Req;
+  };
+
+  struct RExMirMemLRPst_Req_struct {
+    uint8 RExMirMemUDPst_Req;
+    uint8 RExMirMemLRPst_Req;
+    uint8 RExMirMemLRPstPurpose_Req;
+  };
+
+  struct BdMemPst_Set_struct {
+    BodyDomain::FRSeatMemPst_Req_struct FLSeatMemPst_Req[5];
+    BodyDomain::FRSeatMemPst_Req_struct FRSeatMemPst_Req[4];
+    BodyDomain::SRLSeatMemPst_Req_struct SRLSeatMemPst_Req[2];
+    BodyDomain::SRRSeatMemPst_Req_struct SRRSeatMemPst_Req[2];
+    BodyDomain::SteerMemPst_Req_struct SteerMemPst_Req[5];
+    BodyDomain::LExMirMemLRPst_Req_struct LExMirMemLRPst_Req[8];
+    BodyDomain::RExMirMemLRPst_Req_struct RExMirMemLRPst_Req[8];
+  };
+
+  struct BdMemPst_Get_struct {
+    uint8 FLSeatMemPstGet_Req;
+    uint8 FRSeatMemPstGet_Req;
+    uint8 SRLSeatMemPstGet_Req;
+    uint8 SRRSeatMemPstGet_Req;
+    uint8 SteerMemPstGet_Req;
+    uint8 LExMirMemLRPstGet_Req;
+    uint8 RExMirMemLRPstGet_Req;
+  };
+
+  struct FLSeatMemPst_Rsp_struct {
+    uint8 FLSeatMemPstPurpose_Rsp;
+    uint8 FLSeatMemFBPst_Rsp;
+    uint8 FLSeatMemBackrestPst_Rsp;
+    uint8 FLSeatMemHgtPst_Rsp;
+    uint8 FLSeatMemCshnAngPst_Rsp;
+    uint8 FLSeatMemLegAngCshnExtPst_Rsp;
+    uint8 FLSeatMemLegLengthPst_Rsp;
+  };
+
+  struct FRSeatMemPst_Rsp_struct {
+    uint8 FRSeatMemPstPurpose_Rsp;
+    uint8 FRSeatMemFBPst_Rsp;
+    uint8 FRSeatMemBackrestPst_Rsp;
+    uint8 FRSeatMemHgtPst_Rsp;
+    uint8 FRSeatMemCshnAngPst_Rsp;
+    uint8 FRSeatMemLegAngCshnExtPst_Rsp;
+    uint8 FRSeatMemLegLengthPst_Rsp;
+  };
+
+  struct SRLSeatMemPst_Rsp_struct {
+    uint8 SRLSeatMemPstPurpose_Rsp;
+    uint8 SRLSeatMemFBPst_Rsp;
+    uint8 SRLSeatMemBackrestPst_Rsp;
+    uint8 SRLSeatMemHgtPst_Rsp;
+    uint8 SRLSeatMemCshnAngPst_Rsp;
+    uint8 SRLSeatMemLegAngCshnExtPst_Rsp;
+  };
+
+  struct SRRSeatMemPst_Rsp_struct {
+    uint8 SRRSeatMemPstPurpose_Rsp;
+    uint8 SRRSeatMemFBPst_Rsp;
+    uint8 SRRSeatMemBackrestPst_Rsp;
+    uint8 SRRSeatMemHgtPst_Rsp;
+    uint8 SRRSeatMemCshnAngPst_Rsp;
+    uint8 SRRSeatMemLegAngCshnExtPst_Rsp;
+  };
+
+  struct SteerSeatMemPst_Rsp_struct {
+    uint8 SteerMemPstPurpose_Rsp;
+    uint8 SteerMemTiltPst_Rsp;
+    uint8 SteerMemTelePst_Rsp;
+  };
+
+  struct LExMirMemLRPst_Rsp_struct {
+    uint8 LExMirMemUDPst_Rsp;
+    uint8 LExMirMemLRPst_Rsp;
+    uint8 LExMirMemLRPstPurpose_Rsp;
+  };
+
+  struct RExMirMemLRPst_Rsp_struct {
+    uint8 RExMirMemUDPst_Rsp;
+    uint8 RExMirMemLRPst_Rsp;
+    uint8 RExMirMemLRPstPurpose_Rsp;
+  };
+
+  struct BdMemPst_Rsp_struct {
+    BodyDomain::FLSeatMemPst_Rsp_struct FLSeatMemPst_Req[5];
+    BodyDomain::FRSeatMemPst_Rsp_struct FRSeatMemPst_Req[4];
+    BodyDomain::SRLSeatMemPst_Rsp_struct SRLSeatMemPst_Req[2];
+    BodyDomain::SRRSeatMemPst_Rsp_struct SRRSeatMemPst_Req[2];
+    BodyDomain::SteerSeatMemPst_Rsp_struct SteerMemPst_Req[5];
+    BodyDomain::LExMirMemLRPst_Rsp_struct LExMirMemLRPst_Req[8];
+    BodyDomain::RExMirMemLRPst_Rsp_struct RExMirMemLRPst_Req[8];
+  };
+
+  union BdPst_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::BdPst_Set_struct BdPst_Set;
+    case 1:     BodyDomain::BdPst_Get_struct BdPst_Get;
+    case 2:     BodyDomain::BdPst_Ctrl_struct BdPst_Ctrl;
+    case 3:     BodyDomain::BdPst_St_Get_struct BdPst_St_Get;
+    case 4:     BodyDomain::BdMemPst_Set_struct BdMemPst_Set;
+    case 5:     BodyDomain::BdMemPst_Get_struct BdMemPst_Get;
+  };
+
+  union BdPst_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::BdPst_Rsp_struct BdPst_Set_SOA;
+    case 1:     BodyDomain::BdPst_Rsp_struct BdPst_Get_SOA;
+    case 2:     BodyDomain::BdPst_Ctrl_SOA_struct BdPst_Ctrl_SOA;
+    case 3:     BodyDomain::BdPst_St_struct BdPst_St_Get_SOA;
+    case 4:     BodyDomain::BdMemPst_Rsp_struct BdMemPst_Set_SOA;
+    case 5:     BodyDomain::BdMemPst_Rsp_struct BdMemPst_Get_SOA;
+  };
+
+  struct StAdj_Ctrl_struct {
+    uint8 FLSeatFBAdj_Act;
+    uint8 FLSeatBackrestAdj_Act;
+    uint8 FLSeatHgtAdj_Act;
+    uint8 FLSeatCshnAngAdj_Act;
+    uint8 FLLegAngCshnExtAdj_Act;
+    uint8 FLSeatLegLengthAdj_Act;
+    uint8 FRSeatFBAdj_Act;
+    uint8 FRSeatBackrestAdj_Act;
+    uint8 FRSeatHgtAdj_Act;
+    uint8 FRSeatCshnAngAdj_Act;
+    uint8 FRLegAngCshnExtAdj_Act;
+    uint8 FRSeatLegLengthAdj_Act;
+    uint8 FLSeatFBPst_Req;
+    uint8 FLSeatBackresPst_Req;
+    uint8 FLSeatHgtPst_Req;
+    uint8 FLSeatCshnAngPst_Req;
+    uint8 FLLegAngCshnExtPst_Req;
+    uint8 FLSeatLegLengthPst_Req;
+    uint8 FRSeatFBPst_Req;
+    uint8 FRSeatBackrestPst_Req;
+    uint8 FRSeatHgtPst_Req;
+    uint8 FRSeatCshnAngPst_Req;
+    uint8 FRLegAngCshnExtPst_Req;
+    uint8 FRSeatLegLengthPst_Req;
+    string<10> CtrlSource;
+  };
+
+  struct StAdj_Ctrl_SOA_struct {
+    uint8 StAdj_Ctrl_SOA_u8;
+  };
+
+  struct StAdj_St_struct {
+    uint8 FLSeatFBMv_St;
+    uint8 FLSeatBackrestMv_St;
+    uint8 FLSeatHgtMv_St;
+    uint8 FLSeatCshnAngMv_St;
+    uint8 FLLegAngCshnExtMv_St;
+    uint8 FLSeatLegLengthMv_St;
+    uint8 FRSeatFBMv_St;
+    uint8 FRSeatBackrestMv_St;
+    uint8 FRSeatHgtMv_St;
+    uint8 FRSeatCshnAngMv_St;
+    uint8 FRLegAngCshnExtMv_St;
+    uint8 FRSeatLegLengthMv_St;
+    uint8 FLSeatFBPst_Val;
+    uint8 FLSeatBackrestPst_Val;
+    uint8 FLSeatHgtPst_Val;
+    uint8 FLSeatCshnAngPst_Val;
+    uint8 FLLegAngCshnExtPst_Val;
+    uint8 FLSeatLegLengthPst_Val;
+    uint8 FRSeatFBPst_Val;
+    uint8 FRSeatBackrestPst_Val;
+    uint8 FRSeatHgtPst_Val;
+    uint8 FRSeatCshnAngPst_Val;
+    uint8 FRLegAngCshnExtPst_Val;
+    uint8 FRSeatLegLengthPst_Val;
+  };
+
+  struct StAdj_St_Get_struct {
+    uint16 StPstBit;
+    string<10> CtrlSource;
+  };
+
+  union StAdj_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::StAdj_Ctrl_struct StAdj_Ctrl;
+    case 1:     BodyDomain::StAdj_St_Get_struct StAdj_St_Get;
+  };
+
+  union StAdj_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::StAdj_Ctrl_SOA_struct StAdj_Ctrl_SOA;
+    case 1:     BodyDomain::StAdj_St_struct StAdj_St_Get_SOA;
+  };
+
+  struct DrLth_Set_struct {
+    uint8 TDrOpenAngSet_Act;
+    string<10> CtrlSource;
+  };
+
+  struct DrLth_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct DrLth_Rsp_struct {
+    uint8 TDrOpenAngSet_Rsp;
+  };
+
+  struct DrLth_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct DrLth_Ctrl_struct {
+    uint8 TDoorBtn_Act;
+    uint8 TDoorPos_Act;
+    uint8 FLDoorBtn_Act;
+    uint8 RLDoorBtn_Act;
+    uint8 FRDoorBtn_Act;
+    uint8 RRDoorBtn_Act;
+    string<10> CtrlSource;
+  };
+
+  struct DrLth_Ctrl_SOA_struct {
+    uint8 DrLth_Ctrl_SOA_u8;
+  };
+
+  struct DrLth_St_struct {
+    uint8 FLDoor_st;
+    uint8 RLDoor_st;
+    uint8 FRDoor_st;
+    uint8 RRDoor_st;
+    uint8 TDoor_st;
+    uint8 FLNomDoor_St;
+    uint8 RLNomDoor_St;
+    uint8 FRNomDoor_St;
+    uint8 RRNomDoor_St;
+    uint8 TDoorNominal_St;
+    uint8 TDrWrk_St;
+    uint8 TDrTripPst_Val;
+    uint8 FLDrStpRsn_st;
+    uint8 RLDrStpRsn_st;
+    uint8 FRDrStpRsn_st;
+    uint8 RRDrStpRsn_st;
+    uint8 TDrStpRsn_st;
+    uint8 TDoorTip_St;
+    uint8 HoodLatch_St;
+  };
+
+  union DrLth_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::DrLth_Set_struct DrLth_Set;
+    case 1:     BodyDomain::DrLth_Get_struct DrLth_Get;
+    case 2:     BodyDomain::DrLth_Ctrl_struct DrLth_Ctrl;
+    case 3:     BodyDomain::DrLth_St_Get_struct DrLth_St_Get;
+  };
+
+  union DrLth_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::DrLth_Rsp_struct DrLth_Set_SOA;
+    case 1:     BodyDomain::DrLth_Rsp_struct DrLth_Get_SOA;
+    case 2:     BodyDomain::DrLth_Ctrl_SOA_struct DrLth_Ctrl_SOA;
+    case 3:     BodyDomain::DrLth_St_struct DrLth_St_Get_SOA;
+  };
+
+  struct Hdl_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct Hdl_St_struct {
+    uint8 FLHdlPst_St;
+    uint8 RLHdlPst_St;
+    uint8 FRHdlPst_St;
+    uint8 RRHdlPst_St;
+    uint8 FLHdlStpRsn_St;
+    uint8 RLHdlStpRsn_St;
+    uint8 FRHdlStpRsn_St;
+    uint8 RRHdlStpRsn_St;
+  };
+
+  struct InLt_Set_struct {
+    uint8 TpLtAutoSet_Req;
+    uint8 TpLtClrSet_Req;
+    uint8 TpLtBrtSet_Req;
+    uint8 BckLtBrtSet_Req;
+    string<10> CtrlSource;
+  };
+
+  struct InLt_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct InLt_Rsp_struct {
+    uint8 TpLtAutoSet_Rsp;
+    uint8 TpLtClrSet_Rsp;
+    uint8 TpLtBrtSet_Rsp;
+    uint8 BckLtBrtSet_Rsp;
+  };
+
+  struct InLt_Ctrl_struct {
+    uint8 TpLtBtn_Act;
+    uint8 TpLtSearch_Act;
+    uint8 FLTpLtRead_Act;
+    uint8 RLTpLtRead_Act;
+    uint8 FRTpLtRead_Act;
+    uint8 RRTpLtRead_Act;
+    string<10> CtrlSource;
+  };
+
+  struct InLt_Ctrl_SOA_struct {
+    uint8 InLt_Ctrl_SOA_u8;
+  };
+
+  struct InLt_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct InLt_St_struct {
+    uint8 TpLtWrk_St;
+    uint8 TpLtSearch_St;
+    uint8 FLTpLtRead_St;
+    uint8 RLTpLtRead_St;
+    uint8 FRTpLtRead_St;
+    uint8 RRTpLtRead_St;
+  };
+
+  union InLt_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::InLt_Set_struct InLt_Set;
+    case 1:     BodyDomain::InLt_Get_struct InLt_Get;
+    case 2:     BodyDomain::InLt_Ctrl_struct InLt_Ctrl;
+    case 3:     BodyDomain::InLt_St_Get_struct InLt_St_Get;
+  };
+
+  union InLt_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::InLt_Rsp_struct InLt_Set_SOA;
+    case 1:     BodyDomain::InLt_Rsp_struct InLt_Get_SOA;
+    case 2:     BodyDomain::InLt_Ctrl_SOA_struct InLt_Ctrl_SOA;
+    case 3:     BodyDomain::InLt_St_struct InLt_St_Get_SOA;
+  };
+
+  struct AmLt_Set_struct {
+    uint8 AmLtBtn_Set;
+    uint8 AmLtBrt_Set;
+    uint8 AmLtMode_Set;
+    uint16 AmLtCustomClr_Set;
+    uint8 AmLtAutoBrt_Set;
+    uint8 AmLtBrtFollow_Set;
+    uint8 AmLtVoice_Set;
+    uint8 Welcome_Set;
+    uint8 AmLtMusic_Set;
+    uint8 AmLtTemp_Set;
+    uint16 AmLtMedRedVal_Set;
+    uint16 AmLtMedGreenVal_Set;
+    uint16 AmLtMedBlueVal_Set;
+    string<10> CtrlSource;
+  };
+
+  struct AmLt_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct AmLt_Rsp_struct {
+    uint8 AmLtBtn_Rsp;
+    uint8 AmLtBrt_Rsp;
+    uint8 AmLtMode_Rsp;
+    uint16 AmLtCustomClr_Rsp;
+    uint8 AmLtAutoBrt_Rsp;
+    uint8 AmLtBrtFollow_Rsp;
+    uint8 AmLtVoice_Rsp;
+    uint8 AmLtWelcome_Rsp;
+    uint8 AmLtMusic_Rsp;
+    uint8 AmLtTemp_Rsp;
+  };
+
+  union AmLt_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::AmLt_Set_struct AmLt_Set;
+    case 1:     BodyDomain::AmLt_Get_struct AmLt_Get;
+  };
+
+  union AmLt_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::AmLt_Rsp_struct AmLt_Set_SOA;
+    case 1:     BodyDomain::AmLt_Rsp_struct AmLt_Get_SOA;
+  };
+
+  struct ExtLt_Ctrl_Struct {
+    uint8 TurnLight_Req;
+    uint8 EtnlLgt_Req;
+    uint8 HighBeam_Req;
+    uint8 HDBI_RearFogBm_Req;
+    uint8 FollowMeHome_Req;
+    uint8 LgtHeightAdjSet_Req;
+    uint8 AHB_Req;
+    uint8 HzrdSW_St;
+    string<10> CtrlSource;
+  };
+
+  struct ExtLt_Ctrl_SOA_struct {
+    uint8 ExtLt_Ctrl_SOA_u8;
+  };
+
+  struct ExtLt_St_Struct {
+    uint8 LeftTurnLgt_Req;
+    uint8 RgtTurnLgt_Req;
+    uint8 FLPstnLgt_Req;
+    uint8 FRPstnLgt_Req;
+    uint8 RLPstnLgt_Req;
+    uint8 RRPstnLgt_Req;
+    uint8 HighLgt_Req;
+    uint8 LwLgt_Req;
+    uint8 HDBM_RearFogBm_Req;
+    uint8 EtnlLgt_Rsp;
+    uint8 FollowMeHome_Rsp;
+    uint8 LgtHeightAdjSet_Rsp;
+    uint8 AHB_Rsp;
+  };
+
+  struct BdSf_Ctrl_struct {
+    uint8 LChdlock_Req;
+    uint8 RChdlock_Req;
+    uint8 ChdLockMode_Req;
+    string<10> CtrlSource;
+  };
+
+  struct BdSf_Ctrl_SOA_struct {
+    uint8 BdSf_Ctrl_SOA_u8;
+  };
+
+  struct BdSf_St_struct {
+    uint8 LChdlock_st;
+    uint8 RChdlock_st;
+    uint8 ChdLockMode_st;
+  };
+
+  struct CgC_Ctrl_struct {
+    uint8 ChrgCapCtrlSW_Req;
+    string<10> CtrlSource;
+  };
+
+  struct CgC_Ctrl_SOA_struct {
+    uint8 CgC_Ctrl_SOA_u8;
+  };
+
+  struct CgC_St_struct {
+    uint8 ChrgCap_St;
+    uint8 ChrgCapMv_St;
+    uint8 ChrgCapPst_St;
+    uint8 ChrgCapStpRsn_St;
+  };
+
+  struct BdCft_Ctrl_struct {
+    uint8 FLLumbSuppUDAdj_Act;
+    uint8 FLLumbSuppFBAdj_Act;
+    uint8 FRLumbSuppUDAdj_Act;
+    uint8 FRLumbSuppFBAdj_Act;
+    uint8 FLSeatShoulderAdj_Act;
+    uint8 FRSeatShoulderAdj_Act;
+    uint8 FLSeatMsg_Act;
+    uint8 FLSeatMsgMode_Act;
+    uint8 FLSeatMsgStrth_Act;
+    uint8 FRSeatMsg_Act;
+    uint8 FRSeatMsgMode_Act;
+    uint8 FRSeatMsgStrth_Act;
+    uint8 FLSeatHt_Act;
+    uint8 FRSeatHt_Act;
+    uint8 SRLSeatHt_Act;
+    uint8 SRRSeatHt_Act;
+    uint8 FLSeatVtlt_Act;
+    uint8 FRSeatVtlt_Act;
+    uint8 SRLSeatVtlt_Act;
+    uint8 SRRSeatVtlt_Act;
+    uint8 SteerHt_Act;
+    string<10> CtrlSource;
+  };
+
+  struct BdCft_Ctrl_SOA_struct {
+    uint8 BdCft_Ctrl_SOA_u8;
+  };
+
+  struct BdCft_St_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct BdCft_St_struct {
+    uint8 FLLumbSuppFBMv_St;
+    uint8 FLLumbSuppUDMv_St;
+    uint8 FRLumbSuppFBMv_St;
+    uint8 FRLumbSuppUDMv_St;
+    uint8 FLSeatShoulderAdj_St;
+    uint8 FRSeatShoulderAdj_St;
+    uint8 FLSeatMsg_St;
+    uint8 FLSeatMsgMode_St;
+    uint8 FLSeatMsgStrth_St;
+    uint8 FRSeatMsg_St;
+    uint8 FRSeatMsgMode_St;
+    uint8 FRSeatMsgStrth_St;
+    uint8 FLSeatHt_St;
+    uint8 FRSeatHt_St;
+    uint8 SRLSeatHt_St;
+    uint8 SRRSeatHt_St;
+    uint8 FLSeatVtlt_St;
+    uint8 FRSeatVtlt_St;
+    uint8 SRLSeatVtlt_St;
+    uint8 SRRSeatVtlt_St;
+    uint8 SteerHt_St;
+  };
+
+  struct BdCft_Set_struct {
+    uint8 SeatAutoHeat_Set;
+    uint8 StreeAutoHeat_Set;
+    string<10> CtrlSource;
+  };
+
+  struct BdCft_Rsp_struct {
+    uint8 SeatAutoHeat_Rsp;
+    uint8 StreeAutoHeat_Rsp;
+  };
+
+  union BdCft_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::BdCft_Ctrl_struct BdCft_Ctrl;
+    case 1:     BodyDomain::BdCft_St_Get_struct BdCft_St_Get;
+    case 2:     BodyDomain::BdCft_Set_struct BdCft_Set;
+  };
+
+  union BdCft_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::BdCft_Ctrl_SOA_struct BdCft_Ctrl_SOA;
+    case 1:     BodyDomain::BdCft_St_struct BdCft_St_Get_SOA;
+    case 2:     BodyDomain::BdCft_Rsp_struct BdCft_Set_SOA;
+  };
+
+  struct BotSeatSync_Set_struct {
+    uint8 SeatSync_Set;
+    string<10> CtrlSource;
+  };
+
+  struct BotSeatSync_Get_struct {
+    uint8 constant;
+    string<10> CtrlSource;
+  };
+
+  struct BotSeatSync_Rsp_struct {
+    uint8 SeatSync_Rsp;
+  };
+
+  struct TargetPointSubstruct {
+    uint8 TargetPoint_Num;
+    uint16 MovePosition_Rz;
+    uint16 TargetPointTime_Increase;
+  };
+
+  struct BotScript_Ctrl_struct {
+    uint8 ScriptID;
+    uint8 MotionScript;
+    sequence<BodyDomain::TargetPointSubstruct, 252> TargetPointSequence;
+  };
+
+  struct BotScript_St_struct {
+    uint8 TransScript_st;
+  };
+
+  struct BotMotion_Ctrl_struct {
+    uint8 RelCallMotionScript_Ctrl;
+    uint8 AbsCallMotionScript_Ctrl;
+    uint8 JogRight_Ctrl;
+    uint8 JogLeft_Ctrl;
+    uint8 ComfortPosition_Ctrl;
+    string<10> CtrlSource;
+  };
+
+  struct BotMotion_Ctrl_SOA_struct {
+    uint8 BotMotion_Ctrl_SOA_u8;
+  };
+
+  struct BotMotion_St_struct {
+    uint8 Main_St;
+    uint8 Sub_St;
+    uint8 RotationAngle_Z_St;
+    uint8 MotionCommand_St;
+    uint8 ComfortPosition_St;
+    uint8 ScriptExeFinish_Rsp;
+  };
+
+  union Bot_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::BotSeatSync_Set_struct BotSeatSync_Set;
+    case 1:     BodyDomain::BotSeatSync_Get_struct BotSeatSync_Get;
+    case 2:     BodyDomain::BotMotion_Ctrl_struct BotMotion_Ctrl;
+  };
+
+  union Bot_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::BotSeatSync_Rsp_struct BotSeatSync_Set_SOA;
+    case 1:     BodyDomain::BotSeatSync_Rsp_struct BotSeatSync_Get_SOA;
+    case 2:     BodyDomain::BotMotion_Ctrl_SOA_struct BotMotion_Ctrl_SOA;
+  };
+
+  struct DKLst_Get_struct {
+    uint8 DKLst_Req;
+    string<10> CtrlSource;
+  };
+
+  struct DigitalKeyIDArray {
+    uint8 DigitalKeyID[16];
+  };
+
+  struct DKLstSubstruct {
+    BodyDomain::DigitalKeyIDArray DigitalKeyID;
+    uint8 DigitalKey_St;
+    string<20> DigitalKeyName;
+    uint8 DigitalKeyAuth_St;
+  };
+
+  struct DKLst_Rsp_array {
+    sequence<BodyDomain::DKLstSubstruct, 16> DKLst;
+  };
+
+  struct NFCKeyLst_Get_struct {
+    uint8 NFCKeyLst_Req;
+    string<10> CtrlSource;
+  };
+
+  struct NFCCardIDArray {
+    uint8 NFCCardID[16];
+  };
+
+  struct NFCKeyLstSubstruct {
+    BodyDomain::NFCCardIDArray NFCCardID;
+    uint8 NFCCard1_St;
+    string<20> NFCCardName;
+    uint8 NFCCardAuth_St;
+  };
+
+  struct NFCKeyLst_Rsp_array {
+    sequence<BodyDomain::NFCKeyLstSubstruct, 10> NFCKeyLst;
+  };
+
+  struct NFCKeyRename_Set_struct {
+    BodyDomain::NFCCardIDArray NFCCardID;
+    string<20> NFCCardName;
+    string<10> CtrlSource;
+  };
+
+  struct NFCKeyRename_Rsp_struct {
+    uint8 NFCCardRenameRslt;
+  };
+
+  struct PhysicalKeyLst_Get_struct {
+    uint8 PhysicalKeyLst_Req;
+  };
+
+  struct PhysicalKeyMACArray {
+    uint8 PhysicalKeyMACAddr[6];
+  };
+
+  struct PhysicalKeyLstSubstruct {
+    BodyDomain::PhysicalKeyMACArray PhysicalKeyMACAddr;
+    uint8 PhysicalKeyAuth_St;
+  };
+
+  struct PhysicalKeyLst_Rsp_array {
+    sequence<BodyDomain::PhysicalKeyLstSubstruct, 2> PhysicalKeyLst;
+  };
+
+  struct NFCKeyMag_Crtl_struct {
+    uint8 NFCSKeyAuth_Set;
+    uint8 NFCKeyBind_Set;
+    uint8 NFCKeyDel_Set;
+    uint8 NFCKeyFrz_Set;
+    uint8 NFCKeyUnfrzAuth_Set;
+    BodyDomain::NFCCardIDArray NFCCardID;
+    string<10> CtrlSource;
+  };
+
+  struct NFCKeyMag_Crtl_SOA_struct {
+    uint8 NFCKeyMag_Crtl_SOA_u8;
+  };
+
+  struct NFCKeyMag_St_struct {
+    uint8 NFCKeyBindRslt_St;
+    uint8 NFCKeyBindFailRsn_St;
+    uint8 NFCKeyDelRslt_St;
+    uint8 NFCKeyDelFailRsn_St;
+    uint8 NFCKeyFrzRslt_St;
+    uint8 NFCKeyFrzFailRsn_St;
+    uint8 NFCKeyUnfrzAuthRslt_St;
+    uint8 NFCKeyUnfrzAuthFailRsn_St;
+    uint8 NFCKeyUnfrzRslt_St;
+    uint8 NFCKeyUnfrzFailRsn_St;
+    string<10> CtrlSource;
+  };
+
+  struct TargetPointStruct_Array {
+    sequence<BodyDomain::TargetPointSubstruct, 252> TargetPoint;
+  };
+
+  union Key_Srv_Req_Union switch(uint8) {
+    case 0:     BodyDomain::DKLst_Get_struct DKLst_Get;
+    case 1:     BodyDomain::NFCKeyLst_Get_struct NFCKeyLst_Get;
+    case 2:     BodyDomain::NFCKeyRename_Set_struct NFCKeyRename_Set;
+    case 3:     BodyDomain::PhysicalKeyLst_Get_struct PhysicalKeyLst_Get;
+    case 4:     BodyDomain::NFCKeyMag_Crtl_struct NFCKeyMag_Crtl;
+  };
+
+  union Key_Srv_Resp_Union switch(uint8) {
+    case 0:     BodyDomain::DKLst_Rsp_array DKLst_Get_SOA;
+    case 1:     BodyDomain::NFCKeyLst_Rsp_array NFCKeyLst_Get_SOA;
+    case 2:     BodyDomain::NFCKeyRename_Rsp_struct NFCKeyRename_Set_SOA;
+    case 3:     BodyDomain::PhysicalKeyLst_Rsp_array PhysicalKeyLst_Get_SOA;
+    case 4:     BodyDomain::NFCKeyMag_Crtl_SOA_struct NFCKeyMag_Crtl_SOA;
+  };
+
+  struct KeyInfo_Notify_struct {
+    uint8 NFCDetRmdrSet_Req;
+    uint8 BleKeyDiscnctRmdr_Req;
+    uint8 OwnerKey_St;
+  };
+
+};
+
+module PTDomain {
+  struct PowerMode_Ctrl_struct {
+    uint8 PowerMode_Req;
+    string<10> CtrlSource;
+  };
+
+  struct PowerMode_Ctrl_SOA_struct {
+    uint8 PowerOn_Rsp;
+    uint8 PowerOff_Rsp;
+  };
+
+  struct PowerMode_St_struct {
+    uint8 PowerMode_St;
+    uint8 PowerGoOff_St;
+    uint8 PowerOffAvl_St;
+  };
+
+  struct CarMode_Ctrl_struct {
+    uint8 CarMode_Req;
+    string<10> CtrlSource;
+  };
+
+  struct CarMode_Ctrl_SOA_struct {
+    uint8 CarMode_Ctrl_SOA_u8;
+  };
+
+  struct CarMode_St_struct {
+    uint8 CarMode_St;
+  };
+
+  struct DrivingMode_Ctrl_struct {
+    uint8 EPSModeChange_Req;
+    uint8 TargVehicleMode_Req;
+    uint8 PTModeChange_Req;
+    uint8 LowConsumMode_Req;
+    uint8 ValetMode_Req;
+    uint8 OnePedalMode_Req;
+    uint8 CoastRegenStrg_Req;
+    uint8 SpdLimit_Req;
+    uint8 TrailMode_Req;
+    uint8 Salemode_Req;
+    string<10> CtrlSource;
+  };
+
+  struct DrivingMode_Ctrl_SOA_struct {
+    uint8 DrivingMode_Ctrl_SOA_u8;
+  };
+
+  struct DringMode_St_Struct {
+    uint8 DMSEPSModeInfo_St;
+    uint8 DMSVehMode_St;
+    uint8 DMSModeChgEn_St;
+    uint8 DMSPTModeInfo_St;
+    uint8 DMSValetMode_St;
+    uint8 OnePedalMode_St;
+    uint8 OPMAvaliability_St;
+    uint8 RegenSetPct_Rsp;
+    uint8 RegenAvail_St;
+    uint8 RegenForDisp_UI;
+    uint8 DrvVehModAvaliability_St;
+    uint8 TrailMode_St;
+    uint8 TrailAvaliability_St;
+    uint8 TrailForDisp_UI;
+    uint8 SaleMode_St;
+  };
+
+  union VehicleMode_Srv_Req_Union switch(uint8) {
+    case 0:     PTDomain::PowerMode_Ctrl_struct PowerMode_Ctrl;
+    case 1:     PTDomain::CarMode_Ctrl_struct CarMode_Ctrl;
+    case 2:     PTDomain::DrivingMode_Ctrl_struct DrivingMode_Ctrl;
+  };
+
+  union VehicleMode_Srv_Resp_Union switch(uint8) {
+    case 0:     PTDomain::PowerMode_Ctrl_SOA_struct PowerMode_Ctrl_SOA;
+    case 1:     PTDomain::CarMode_Ctrl_SOA_struct CarMode_Ctrl_SOA;
+    case 2:     PTDomain::DrivingMode_Ctrl_SOA_struct DrivingMode_Ctrl_SOA;
+  };
+
+  struct CHS_Ctrl_struct {
+    uint8 HDCSw_Req;
+    uint8 EHBMBrkModeSet_Req;
+    uint8 CSTSw_Req;
+    uint8 TCSSw_Req;
+    uint8 AVHSw_Req;
+    uint8 ESCSw_Req;
+    uint8 ParkingSwitch_Req;
+    string<10> CtrlSource;
+  };
+
+  struct CHS_St_struct {
+    uint8 HDCAvail_St;
+    uint8 HDC_St;
+    uint8 BrakeModeEnable_St;
+    uint8 BrakeMode_St;
+    uint8 BoostDegrade_St;
+    uint8 CST_Rsp;
+    uint8 TCSSwAvail_St;
+    uint8 PataLamp_St;
+    uint8 AVHAvail_St;
+    uint8 AVH_St;
+    uint8 ESCSwAvail_St;
+    uint8 ESClamp_St;
+    uint8 EPB_St;
+    uint8 BU_EPB_St;
+    uint8 EPBSwAvail_St;
+  };
+
+  struct CHS_Ctrl_SOA_struct {
+    uint8 CHS_Ctrl_SOA_u8;
+  };
+
+};
+
+module EnergyDomain {
+  struct AC_Ctrl_struct {
+    uint8 ACCycleMode_Req;
+    uint8 FACAirFlowLevel_Req;
+    uint8 FACMode_Req;
+    uint8 FACSwitch_Req;
+    uint8 FrontDeFrostFog_Req;
+    uint8 FLeftTempSet_Req;
+    uint8 FRightTempSet_Req;
+    uint8 FTempAreaSynd_Req;
+    uint8 FCoolOrHeatOrVent_Req;
+    uint8 ACOperationMode_Cmd;
+    uint8 FAutoAC_Req;
+    uint8 AirFragranceSwitchEnable;
+    uint8 FragranceConcentration_Req;
+    uint8 AirFragranceChannel1;
+    uint8 AirFragranceChannel2;
+    uint8 AirFragranceChannel3;
+    uint8 IONSet_Cmd;
+    uint8 PM25Set_Cmd;
+    uint8 AQSSet_Cmd;
+    uint8 FLeftAirOutletMode_Cmd;
+    uint8 FRightAirOutletMode_Cmd;
+    uint8 FLOutletSwitch_Cmd;
+    uint8 LCOutletSwitch_Cmd;
+    uint8 RCOutletSwitch_Cmd;
+    uint8 FROutletSwitch_Cmd;
+    uint8 FLOutletLeftRightAngle;
+    uint8 FLOutletUpDownAngle;
+    uint8 LCOutletUpDownAngle;
+    uint8 LCOutletLeftRightAngle;
+    uint8 RCOutletUpDownAngle;
+    uint8 RCOutletLeftRightAngle;
+    uint8 FROutletUpDownAngle;
+    uint8 FROutletLeftRightAngle;
+    string<10> CtrlSource;
+  };
+
+  struct AC_St_struct {
+    uint8 ACCycleMode_St;
+    uint8 FACAirFlowLevel_St;
+    uint8 FACMode_St;
+    uint8 FACSwitch_Rsp;
+    uint8 FDeiceDefrost_Rsp;
+    uint8 FLeftTempSet_St;
+    uint8 FRightTempSet_St;
+    uint8 FTempAreaSync_St;
+    uint8 FAcCoolOrHeatOrVent_St;
+    uint8 ACOperateMode_St;
+    uint8 FACAuto_Rsp;
+    uint8 FACAirFlowLevelAuto_St;
+    uint8 FACAirFlowModeAuto_St;
+    uint8 FACCoolOrHeatOrVentAuto_St;
+    uint8 EnvirTemp_Val;
+    uint8 FragSwitchEN_Rsp;
+    uint8 FragConcLevel_Rsp;
+    uint8 FragChannel1Switch_St;
+    uint8 FragChannel2Switch_St;
+    uint8 FragChannel3Switch_St;
+    uint8 FragChannelType;
+    uint8 FragChannelIndex;
+    uint16 FragChannel1Life;
+    uint16 FragChannel2Life;
+    uint16 FragChannel3Life;
+    uint8 IONSet_St;
+    uint8 PM25Set_St;
+    uint8 PM25Trigger_St;
+    uint16 PM25CarConc;
+    uint8 AQSSet_St;
+    uint8 AQSTrigger_St;
+    uint8 AQSAirQuality_Val;
+    uint8 InFilterLifeRemind;
+    uint8 OutsideFilterLifeRemind;
+    uint8 FLeftAirOutletMode_St;
+    uint8 FRightAirOutletMode_St;
+    uint8 OLMFLAirOutletSwitch_Rsp;
+    uint8 OLMLCAirOutletSwitch_Rsp;
+    uint8 OLMRCAirOutletSwitch_Rsp;
+    uint8 OLMFRAirOutletSwitch_Rsp;
+    uint8 OLMFLMotorErrSt;
+    uint8 OLMLCMotorErrSt;
+    uint8 OLMRCMotorErrSt;
+    uint8 OLMFRMotorErrSt;
+    uint8 OLMFLAirOutletLeftRightAngle_Rsp;
+    uint8 OLMFLAirOutletUpDownAngle_Rsp;
+    uint8 OLMLCAirOutletUpDownAngle_Rsp;
+    uint8 OLMLCAirOutletLeftRightAngle_Rsp;
+    uint8 OLMRCAirOutletLeftRightAngle_Rsp;
+    uint8 OLMRCAirOutletUpDownAngle_Rsp;
+    uint8 OLMFRAirOutletUpDownAngle_Rsp;
+    uint8 OLMFRAirOutletLeftRightAngle_Rsp;
+  };
+
+  struct Thermal_St_struct {
+    uint8 HeatLiquidtLackWarn_St;
+    uint8 ThermalLiquidLackWarn_St;
+    uint8 RefrigerantCheckRemind;
+    uint8 FACLimit_St;
+    string<10> CtrlSource;
+  };
+
+  struct AC_Ctrl_SOA_struct {
+    uint8 AC_Ctrl_SOA_u8;
+  };
+
+};
+
+module Temporary {
+  struct GeneralVehSt_Struct {
+    uint16 SOCDisplay_Val;
+    uint8 DCCharge_St;
+    uint8 ACCharge_St;
+    uint8 FLSeatOcp_St;
+    uint8 ActlGear_St;
+    uint8 ActlGearVaild_St;
+    uint8 Ready_St;
+    uint8 DrvrSeatBeltValid_St;
+    uint8 DrvrSeatBelt_St;
+    uint8 VehSpdValid_St;
+    uint16 VehSpd_Val;
+    uint8 EPB_St;
+  };
+
+  struct PTHMI_struct {
+    uint8 OBCACChrgCnctor_St;
+    uint8 OBCACSocketLock_St;
+    uint8 AbnormalShiftInfo;
+    uint8 DriveConflictRemindInfo;
+    uint8 Shift_Err;
+    uint8 HVOffConfirm_Req;
+    uint8 LimpHomeRmnd_St;
+    uint8 LowVoltSys_Err;
+    uint8 LowVoltSysWarnStop_St;
+    uint8 Motorovertemp_St;
+    uint8 PTFaultLgtClr_St;
+    uint32 PTHMI_Req;
+    uint8 PTThmlLiquidLackWarn_St;
+    uint8 PullOver_St;
+    uint8 RegenAvail_St;
+    uint8 ServiceReminder_St;
+    uint16 StdSenarioMileage_Val;
+    uint8 ThmlRunawayWarn_St;
+    uint8 TractionModeAvail_St;
+    uint8 TractionModeRemaind_St;
+    uint8 TractionModeSet_Rsp;
+    uint8 ACCharge_St;
+    uint8 CellOverTemp_St;
+    uint8 ChrgDischrgCnct_St;
+    uint8 DCCharge_St;
+    uint8 FastChrgCnctor_St;
+  };
+
+  struct CHSHMI_struct {
+    uint8 AirbagWarnLamp_St;
+    uint8 EPSSystem_Err;
+    uint8 ABSIntv_St;
+    uint8 ABS_Err;
+    uint8 EBDIntv_St;
+    uint8 EBD_Err;
+    uint8 BrakeFluidLvl_St;
+    uint8 BrakePedal_St;
+    uint8 InputRodStroke_St;
+    uint16 InputRodStroke_Val;
+    uint8 EPBFunctionLamp_St;
+    uint8 EPBFailLamp_St;
+    uint8 CapacityLimitWarn_UI;
+    uint8 OperationReminder_UI;
+    uint8 BU_CapacityLimitWarn_UI;
+    uint8 BU_OperationReminder_UI;
+    uint8 BU_EPBFunctionLamp_St;
+    uint8 BU_EPBFailLamp_St;
+    uint8 BU_EPBHardSwitch_St;
+  };
+
+  struct WiperWash_Ctrl_Struct {
+    uint8 Fwiper_Req;
+    uint8 FMistWash_Req;
+    string<10> CtrlSource;
+  };
+
+  struct SN_info_string {
+    string<18> SN_info_String;
+  };
+
+};
+
+module bottomtotop {
+  struct NMService_Set_struct {
+    uint16 SceneID;
+    uint8 SceneStateReq;
+    string<10> CtrlSource;
+  };
+
+  struct NMService_Set_SOA_struct {
+    uint8 NMService_Set_SOA_u8;
+  };
+
+  struct NmXService_Ctrl_struct {
+    uint8 NMStateReq;
+    string<10> ECUName;
+  };
+
+  struct NmXService_Ctrl_Array {
+    sequence<bottomtotop::NmXService_Ctrl_struct, 50> NmXService_Ctrl;
+  };
+
+  struct NmXService_Ctrl_SOA_struct {
+    uint8 NmXService_Ctrl_SOA_u8;
+  };
+
+  struct NmService_Get_struct {
+    uint8 NMTypeReq;
+    string<10> CtrlSource;
+  };
+
+  struct NMService_St_substruct {
+    uint16 SceneID;
+    uint8 SceneState;
+  };
+
+  struct NMService_St_array {
+    sequence<bottomtotop::NMService_St_substruct, 255> NMService_St;
+  };
+
+  union NMService_Srv_Req_Union switch(uint8) {
+    case 0:     bottomtotop::NMService_Set_struct NMService_Set;
+    case 1:     bottomtotop::NmXService_Ctrl_Array NmXService_Ctrl;
+    case 2:     bottomtotop::NmService_Get_struct NmService_Get;
+  };
+
+  union NMService_Srv_Resp_Union switch(uint8) {
+    case 0:     bottomtotop::NMService_Set_SOA_struct NMService_Set_SOA;
+    case 1:     bottomtotop::NmXService_Ctrl_SOA_struct NmXService_Ctrl_SOA;
+    case 2:     bottomtotop::NMService_St_array NmService_Get_SOA;
+  };
+
+};
+

@@ -1,0 +1,9 @@
+httpget:{"code":"000000","data":
+{"downloadUrl":"https://tsp-pro-mrs.obs.cn-east-2.myhuaweicloud.com",
+"obsFileExpires":180,"obsTokenExpires":1800,"uploadFolder":"vehicle_log_ee",
+"uploadToken":"LQDBAF0OLJ4WNWOWCUGT:QGwSY4bw9lW3azpR8GDzddTk9fI=:eyJl
+eHBpcmF0aW9uIjoiMjAyMy0wNS0xOFQwODozNToxOS43MDJaIiwiY29uZGl0aW9ucyI6W1sic3RhcnRzLXdpdGgiLCI
+ka2V5IiwiIl0seyJidWNrZXQiOiJ0c3AtcHJvLW1ycyJ9LHsieC1vYnMtZXhwaXJlcyI6IjE4MCJ9XX0=",
+"uploadUrl":"https://tsp-pro-mrs.obs.cn-east-2.myhuaweicloud.com"},
+"msg":"SUCCESS"}
+1

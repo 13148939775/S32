@@ -1,0 +1,28 @@
+{
+    "filterfiles": [
+        {
+            "ext": "txt",
+            "enabled": true
+        },
+        {
+            "ext": "docx",
+            "enabled": true
+        },
+        {
+            "ext": "pdf",
+            "enabled": true
+        },
+        {
+            "ext": "xls",
+            "enabled": false    
+        },
+        {
+            "ext": "xml",
+            "enabled": true    
+        },
+        {
+            "ext": "log",
+            "enabled": true    
+        }
+    ]
+}

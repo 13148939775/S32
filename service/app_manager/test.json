@@ -1,0 +1,24 @@
+{
+    "versionInfo": {
+        "version": 1.0,
+        "date": 2003327,
+        "TotalCategories" : 8
+      },
+    "tracks" : [
+      {
+        "name" : "fake1",
+        "path" : "fake1",
+        "para" : 5
+      },
+	  {
+        "name" : "fake2",
+        "path" : "fake2",
+        "para" : 5
+      },
+	  {
+        "name" : "fake3",
+        "path" : "fake3",
+        "para" : 5
+      }
+    ]
+}

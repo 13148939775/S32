@@ -1,0 +1,18 @@
+add_definitions(-DRTI_UNIX -DRTI_LINUX -DRTI_64BIT)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -g -fPIC -O2")
+# message(STATUS "PATH ${MASTER_3RDPARTY_LIBS_DIR}")
+if(USE_X86)
+    message(STATUS "All binary files' OUTPUT DIRECTORY: ${MASTER_ROOT}/bin")
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin/nodes)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin/nodes)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin/nodes) 
+else()
+    message(STATUS "All binary files' OUTPUT DIRECTORY: ${MASTER_ROOT}/bin_aarch64")
+    set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin_aarch64/nodes)
+    set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin_aarch64/nodes)
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${MASTER_ROOT}/bin_aarch64/nodes)
+endif()
+include_directories(
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+)
+add_subdirectory(app)

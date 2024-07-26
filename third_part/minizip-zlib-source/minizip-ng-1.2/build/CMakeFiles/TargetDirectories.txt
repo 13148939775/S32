@@ -1,0 +1,7 @@
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/install/strip.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/install/local.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/install.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/list_install_components.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/rebuild_cache.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/edit_cache.dir
+/work/xjl_work/minizip-ng-1.2/minizip-ng-1.2/build/CMakeFiles/minizip.dir

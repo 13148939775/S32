@@ -1,0 +1,13 @@
+prefix=/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64
+exec_prefix=/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64
+libdir=/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib
+sharedlibdir=/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/lib
+includedir=/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-zlib/zlib-1.2.13/build_aarch64/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

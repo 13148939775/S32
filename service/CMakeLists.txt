@@ -1,0 +1,10 @@
+
+# add_subdirectory(app_manager)
+# add_subdirectory(scene_engine)
+# add_subdirectory(vehicle_control)
+# add_subdirectory(edge_calc_center)
+# add_subdirectory(network_config)
+# add_subdirectory(account_service)
+# add_subdirectory(system_manager)
+# add_subdirectory(log)
+add_subdirectory(hdbi)

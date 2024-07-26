@@ -1,0 +1,13 @@
+{
+    "versionInfo": {
+        "version": 1.0,
+        "date": 2003327,
+        "TotalCategories" : 8
+      },
+    "tracks" : [
+      {
+        "name" : "factory",
+        "path" : "/home/root/sysbin/app/factory"
+      }
+    ]
+}

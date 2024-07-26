@@ -1,0 +1,1371 @@
+{
+  "versionInfo": {
+      "version": 1.0,
+      "date": 2003327,
+      "TotalCategories" : 8
+    },
+  "tracks" : [
+    {
+      "name" : "DefaultSet",
+      "id" : 1,
+      "type": -1,
+      "description" : "缺省模式" ,
+      "update_date": 1 ,
+      "trigger" : true ,
+      "condition" : 0 ,
+      "priority" : 0, 
+      "category" : [
+        {
+          "name" : "DoorCategory",
+          "MetaAbility":
+          [
+            { "name": "leftDoor",
+              "value" : 0,
+              "condition" : 0
+            } ,
+            {
+              "name":"rightDoor",
+              "value" : 0,
+              "condition" : 0
+            } ,
+            {
+              "name" :"backDoor",
+              "value" :  0,
+              "condition" : 0
+           } 
+          ]
+        },
+        {
+          "name" : "LightCategory",
+          "MetaAbility":
+          [
+            { "name": "leftLight",
+              "value" : 2
+            } ,
+            {
+              "name":"rightLight",
+              "value" : 2
+            } ,
+            {
+              "name" :"backLight",
+              "value" :  2
+            } 
+          ]
+        },
+        {
+          "name" : "LightColorCategory",
+          "MetaAbility":
+          [
+            { "name": "leftLight",
+              "value" : 5
+            } ,
+            {
+              "name":"rightLight",
+              "value" : 5
+            } ,
+            {
+              "name" :"backLight",
+              "value" : 5
+            } 
+          ]
+        },
+        {
+          "name" : "MusicLightCategory",
+          "MetaAbility":
+          [
+            { "name": "leftLight",
+              "value" : 1
+            } ,
+            {
+              "name":"rightLight",
+              "value" : 1
+            } ,
+            {
+              "name" :"backLight",
+              "value" : 1
+            } 
+          ]
+        },
+        {
+          "name" : "AirConditioningTemp",
+          "MetaAbility":
+          [
+            { "name": "DriverAirTemp",
+              "value" : 0
+            } ,
+            {
+              "name":"CoDriverAirTemp",
+              "value" : 0
+            } ,
+            {
+              "name" :"BackAirTemp",
+              "value" : 0
+            } 
+          ]
+        },
+        {
+          "name" : "AirConditioningWind",
+          "MetaAbility":
+          [
+            { "name": "LeftWindupdown",
+              "value" : 0
+            } ,
+            {
+              "name":"LeftWindleftright",
+              "value" : 0
+            } ,
+            {
+              "name" :"RightWindleftright",
+              "value" : 0
+            } 
+          ]
+        },
+        {
+          "name" : "FragranceStyle",
+          "MetaAbility":
+          [
+            { "name": "concentration",
+              "value" : 0
+            } ,
+            {
+              "name":"FragranceSwitch",
+              "value" : 0
+            } ,
+            {
+              "name" :"RightWindleftright",
+              "value" : 0
+            } 
+          ]
+        },
+        {
+          "name" : "LoveMusicStyle",
+          "MetaAbility":
+          [
+            { "name": "QQapp",
+              "value" : 0
+            } ,
+            {
+              "name":"MusicVolume",
+              "value" : 0
+            } ,
+            {
+              "name" :"playmode",
+              "value" : 0
+            } 
+          ]
+        }
+      ]
+    },
+    {
+    "name" : "ReadingBook",
+    "id" : 1,
+    "type": 1,
+    "description" : "阅读模式" ,
+    "update_date": 1 ,
+    "trigger" : true  ,
+    "condition" : 1 ,
+    "priority" : 1, 
+    "category" : [
+      {
+        "name" : "DoorCategory",
+        "MetaAbility":
+        [
+          { 
+            "name": "leftDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name":"rightDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name" :"backDoor",
+            "value" :  0,
+            "condition" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 111
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 211
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  511
+          } 
+        ]
+      },
+      {
+        "name" : "LightColorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 11
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 21
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  51
+          } 
+        ]
+      },
+      {
+        "name" : "MusicLightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 1
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 1
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 1
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningTemp",
+        "MetaAbility":
+        [
+          { "name": "DriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name":"CoDriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name" :"BackAirTemp",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningWind",
+        "MetaAbility":
+        [
+          { "name": "LeftWindupdown",
+            "value" : 0
+          } ,
+          {
+            "name":"LeftWindleftright",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "FragranceStyle",
+        "MetaAbility":
+        [
+          { "name": "concentration",
+            "value" : 0
+          } ,
+          {
+            "name":"FragranceSwitch",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LoveMusicStyle",
+        "MetaAbility":
+        [
+          { "name": "QQapp",
+            "value" : 0
+          } ,
+          {
+            "name":"MusicVolume",
+            "value" : 0
+          } ,
+          {
+            "name" :"playmode",
+            "value" : 0
+          } 
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "FindingObjects",
+    "id" : 1,
+    "type": 1,
+    "description" : "寻物模式" ,
+    "update_date": 1 ,
+    "trigger" : true  ,
+    "condition" : 2 ,
+    "priority" : 2, 
+    "category" : [
+      {
+        "name" : "DoorCategory",
+        "size" : 10,
+        "MetaAbility":
+        [
+          { "name": "leftDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name":"rightDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name" :"backDoor",
+            "value" :  0,
+            "condition" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 112
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 212
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  512
+          } 
+        ]
+      },
+      {
+        "name" : "LightColorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 12
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 22
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  52
+          } 
+        ]
+      },
+      {
+        "name" : "MusicLightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 2
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 2
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 2
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningTemp",
+        "MetaAbility":
+        [
+          { "name": "DriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name":"CoDriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name" :"BackAirTemp",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningWind",
+        "MetaAbility":
+        [
+          { "name": "LeftWindupdown",
+            "value" : 0
+          } ,
+          {
+            "name":"LeftWindleftright",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "FragranceStyle",
+        "MetaAbility":
+        [
+          { "name": "concentration",
+            "value" : 0
+          } ,
+          {
+            "name":"FragranceSwitch",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LoveMusicStyle",
+        "MetaAbility":
+        [
+          { "name": "QQapp",
+            "value" : 0
+          } ,
+          {
+            "name":"MusicVolume",
+            "value" : 0
+          } ,
+          {
+            "name" :"playmode",
+            "value" : 0
+          } 
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "LightShow",
+    "id" : 1,
+    "type": 1,
+    "description" : "灯光Show模式" ,
+    "update_date": 1 ,
+    "trigger" : true  ,
+    "condition" : 4 ,
+    "priority" : 3, 
+    "category" : [
+      {
+        "name" : "DoorCategory",
+        "size" : 10,
+        "MetaAbility":
+        [
+          { "name": "leftDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name":"rightDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name" :"backDoor",
+            "value" :  0,
+            "condition" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 112
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 212
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  512
+          } 
+        ]
+      },
+      {
+        "name" : "LightColorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 12
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 22
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  52
+          } 
+        ]
+      },
+      {
+        "name" : "MusicLightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 8
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 8
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 8
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningTemp",
+        "MetaAbility":
+        [
+          { "name": "DriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name":"CoDriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name" :"BackAirTemp",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningWind",
+        "MetaAbility":
+        [
+          { "name": "LeftWindupdown",
+            "value" : 0
+          } ,
+          {
+            "name":"LeftWindleftright",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "FragranceStyle",
+        "MetaAbility":
+        [
+          { "name": "concentration",
+            "value" : 0
+          } ,
+          {
+            "name":"FragranceSwitch",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LoveMusicStyle",
+        "MetaAbility":
+        [
+          { "name": "QQapp",
+            "value" : 0
+          } ,
+          {
+            "name":"MusicVolume",
+            "value" : 0
+          } ,
+          {
+            "name" :"playmode",
+            "value" : 0
+          } 
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "SleepMode",
+    "id" : 1,
+    "type": 1,
+    "description" : "睡眠模式" ,
+    "update_date": 1 ,
+    "trigger" : true ,
+    "condition" : 3 ,
+    "priority" : 4, 
+    "category" : [
+      {
+        "name" : "DoorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name":"rightDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name" :"backDoor",
+            "value" :  0,
+            "condition" : 0
+         } 
+        ]
+      },
+      {
+        "name" : "LightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 2
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 2
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  2
+          } 
+        ]
+      },
+      {
+        "name" : "LightColorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 5
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 5
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 5
+          } 
+        ]
+      },
+      {
+        "name" : "MusicLightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 1
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 1
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 1
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningTemp",
+        "MetaAbility":
+        [
+          { "name": "DriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name":"CoDriverAirTemp",
+            "value" : 0
+          } ,
+          {
+            "name" :"BackAirTemp",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningWind",
+        "MetaAbility":
+        [
+          { "name": "LeftWindupdown",
+            "value" : 0
+          } ,
+          {
+            "name":"LeftWindleftright",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "FragranceStyle",
+        "MetaAbility":
+        [
+          { "name": "concentration",
+            "value" : 0
+          } ,
+          {
+            "name":"FragranceSwitch",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LoveMusicStyle",
+        "MetaAbility":
+        [
+          { "name": "QQapp",
+            "value" : 0
+          } ,
+          {
+            "name":"MusicVolume",
+            "value" : 0
+          } ,
+          {
+            "name" :"playmode",
+            "value" : 0
+          } 
+        ]
+      }
+    ]
+  },
+  {
+    "name" : "CoolMode",
+    "id" : 1,
+    "type": 1,
+    "description" : "凉爽模式" ,
+    "update_date": 1 ,
+    "trigger" : true ,
+    "condition" : 5 ,
+    "priority" : 5, 
+    "category" : [
+      {
+        "name" : "DoorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name":"rightDoor",
+            "value" : 0,
+            "condition" : 0
+          } ,
+          {
+            "name" :"backDoor",
+            "value" :  0,
+            "condition" : 0
+        } 
+        ]
+      },
+      {
+        "name" : "LightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 0
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 0
+          } ,
+          {
+            "name" :"backLight",
+            "value" :  0
+          } 
+        ]
+      },
+      {
+        "name" : "LightColorCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 0
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 0
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "MusicLightCategory",
+        "MetaAbility":
+        [
+          { "name": "leftLight",
+            "value" : 0
+          } ,
+          {
+            "name":"rightLight",
+            "value" : 0
+          } ,
+          {
+            "name" :"backLight",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningTemp",
+        "MetaAbility":
+        [
+          { "name": "DriverAirTemp",
+            "value" : 10
+          } ,
+          {
+            "name":"CoDriverAirTemp",
+            "value" : 10
+          } ,
+          {
+            "name" :"BackAirTemp",
+            "value" : 10
+          } 
+        ]
+      },
+      {
+        "name" : "AirConditioningWind",
+        "MetaAbility":
+        [
+          { "name": "LeftWindupdown",
+            "value" : 10
+          } ,
+          {
+            "name":"LeftWindleftright",
+            "value" : 10
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 10
+          } 
+        ]
+      },
+      {
+        "name" : "FragranceStyle",
+        "MetaAbility":
+        [
+          { "name": "concentration",
+            "value" : 0
+          } ,
+          {
+            "name":"FragranceSwitch",
+            "value" : 0
+          } ,
+          {
+            "name" :"RightWindleftright",
+            "value" : 0
+          } 
+        ]
+      },
+      {
+        "name" : "LoveMusicStyle",
+        "MetaAbility":
+        [
+          { "name": "QQapp",
+            "value" : 0
+          } ,
+          {
+            "name":"MusicVolume",
+            "value" : 0
+          } ,
+          {
+            "name" :"playmode",
+            "value" : 0
+          } 
+        ]
+      }
+  ]
+},
+{
+  "name" : "DriverCool",
+  "id" : 1,
+  "type": 1,
+  "description" : "主驾凉爽PLUS" ,
+  "update_date": 1 ,
+  "trigger" : true ,
+  "condition" : 6,
+  "priority" : 6, 
+  "category" : [
+    {
+      "name" : "DoorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name":"rightDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name" :"backDoor",
+          "value" :  0,
+          "condition" : 0
+       } 
+      ]
+    },
+    {
+      "name" : "LightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" :  0
+        } 
+      ]
+    },
+    {
+      "name" : "LightColorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "MusicLightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningTemp",
+      "MetaAbility":
+      [
+        { "name": "DriverAirTemp",
+          "value" : 10
+        } ,
+        {
+          "name":"CoDriverAirTemp",
+          "value" : 10
+        } ,
+        {
+          "name" :"BackAirTemp",
+          "value" : 10
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningWind",
+      "MetaAbility":
+      [
+        { "name": "LeftWindupdown",
+          "value" : 40
+        } ,
+        {
+          "name":"LeftWindleftright",
+          "value" : 40
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 40
+        } 
+      ]
+    },
+    {
+      "name" : "FragranceStyle",
+      "MetaAbility":
+      [
+        { "name": "concentration",
+          "value" : 0
+        } ,
+        {
+          "name":"FragranceSwitch",
+          "value" : 0
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "LoveMusicStyle",
+      "MetaAbility":
+      [
+        { "name": "QQapp",
+          "value" : 0
+        } ,
+        {
+          "name":"MusicVolume",
+          "value" : 0
+        } ,
+        {
+          "name" :"playmode",
+          "value" : 0
+        } 
+      ]
+    }
+  ]
+},
+{
+  "name" : "ListenMusic",
+  "id" : 1,
+  "type": 1,
+  "description" : "听音乐模式" ,
+  "update_date": 1 ,
+  "trigger" : true ,
+  "condition" : 7 ,
+  "priority" : 2, 
+  "category" : [
+    {
+      "name" : "DoorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name":"rightDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name" :"backDoor",
+          "value" :  0,
+          "condition" : 0
+       } 
+      ]
+    },
+    {
+      "name" : "LightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" :  0
+        } 
+      ]
+    },
+    {
+      "name" : "LightColorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "MusicLightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningTemp",
+      "MetaAbility":
+      [
+        { "name": "DriverAirTemp",
+          "value" : 0
+        } ,
+        {
+          "name":"CoDriverAirTemp",
+          "value" : 0
+        } ,
+        {
+          "name" :"BackAirTemp",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningWind",
+      "MetaAbility":
+      [
+        { "name": "LeftWindupdown",
+          "value" : 0
+        } ,
+        {
+          "name":"LeftWindleftright",
+          "value" : 0
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "FragranceStyle",
+      "MetaAbility":
+      [
+        { "name": "concentration",
+          "value" : 0
+        } ,
+        {
+          "name":"FragranceSwitch",
+          "value" : 0
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "LoveMusicStyle",
+      "MetaAbility":
+      [
+        { "name": "QQapp",
+          "value" : 1
+        } ,
+        {
+          "name":"MusicVolume",
+          "value" : 40
+        } ,
+        {
+          "name" :"playmode",
+          "value" : 2
+        } 
+      ]
+    }
+  ]
+},
+{
+  "name" : "FragranceMode",
+  "id" : 1,
+  "type": 1,
+  "description" : "香薰模式" ,
+  "update_date": 1 ,
+  "trigger" : true ,
+  "condition" : 8 ,
+  "priority" : 1, 
+  "category" : [
+    {
+      "name" : "DoorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name":"rightDoor",
+          "value" : 0,
+          "condition" : 0
+        } ,
+        {
+          "name" :"backDoor",
+          "value" :  0,
+          "condition" : 0
+       } 
+      ]
+    },
+    {
+      "name" : "LightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" :  0
+        } 
+      ]
+    },
+    {
+      "name" : "LightColorCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "MusicLightCategory",
+      "MetaAbility":
+      [
+        { "name": "leftLight",
+          "value" : 0
+        } ,
+        {
+          "name":"rightLight",
+          "value" : 0
+        } ,
+        {
+          "name" :"backLight",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningTemp",
+      "MetaAbility":
+      [
+        { "name": "DriverAirTemp",
+          "value" : 0
+        } ,
+        {
+          "name":"CoDriverAirTemp",
+          "value" : 0
+        } ,
+        {
+          "name" :"BackAirTemp",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "AirConditioningWind",
+      "MetaAbility":
+      [
+        { "name": "LeftWindupdown",
+          "value" : 0
+        } ,
+        {
+          "name":"LeftWindleftright",
+          "value" : 0
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 0
+        } 
+      ]
+    },
+    {
+      "name" : "FragranceStyle",
+      "MetaAbility":
+      [
+        { "name": "concentration",
+          "value" : 40
+        } ,
+        {
+          "name":"FragranceSwitch",
+          "value" : 40
+        } ,
+        {
+          "name" :"RightWindleftright",
+          "value" : 40
+        } 
+      ]
+    },
+    {
+      "name" : "LoveMusicStyle",
+      "MetaAbility":
+      [
+        { "name": "QQapp",
+          "value" : 0
+        } ,
+        {
+          "name":"MusicVolume",
+          "value" : 0
+        } ,
+        {
+          "name" :"playmode",
+          "value" : 0
+        } 
+      ]
+    }
+  ]
+}
+]
+}

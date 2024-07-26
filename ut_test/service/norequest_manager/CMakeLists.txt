@@ -1,0 +1,3 @@
+
+add_subdirectory(noReq_client)
+add_subdirectory(noReq_server)

@@ -1,0 +1,24 @@
+{
+    "tboxType":"VC1",
+    "VC1":{
+        "ethName":"aux0.101",
+        "ipAddress":"192.168.1.22",
+        "netmask":"255.255.255.0",
+        "gatewayAddress":"192.168.1.1",
+        "dns_servers": [
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    },
+    "AN1":{
+        "ethName":"aux0.101",
+        "ipAddress":"192.168.1.2",
+        "netmask":"255.255.255.0",
+        "gatewayAddress":"192.168.1.1",
+        "dns_servers": [
+            "8.8.8.8",
+            "8.8.4.4"
+        ]
+    }
+}
+

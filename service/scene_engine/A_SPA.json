@@ -1,0 +1,646 @@
+{
+    "code": "000000",
+    "data": {
+        "actionList": [
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "52295173756a4a2c99c316290eaac77e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_VOICE_TTS",
+                                "functionValue": "即将进入舒眠模式，根据环境开启通风加热，调整座椅，亮度，音量，氛围灯，按摩强度，香氛等，引导您休息",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "0b0d29a668ff4ef6b78b180567181bf2",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_QQ_FAVORITE_LIST",
+                                "functionValue": "",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "9bfc7825b9ad4c78ba126c026d119c31",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_VOLUME",
+                                "functionValue": "2",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "487d5b55cff948fbb76f7f34300bf690",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_IDCM_BRIGHTNESS",
+                                "functionValue": "0",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "dd58030c32d74919a304221d991f8886",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-ALMIP_THEMEMODECTRL",
+                                "functionValue": "4",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "caff9b513a944cc6899dbf9259a38084",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function -FUNCTION_FRAG_CHANNEL_SWITCH",
+                                "functionValue": "1",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "be413ce34b914f759e774d5986cd2cbc",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-ACM_FRAGCONCCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "2a77af74e61c4b71bd38d72997c70c9e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-ACM_DRIVETEMPCTRL",
+                                "functionValue": "22",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "52295173756a4a2c99c316290eaac77e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_VOICE_TTS",
+                                "functionValue": "你已经在一张舒适的座椅上坐下，他会自动调整到你最舒适的姿势。",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "5f234b874c8041bba97801987e8826e8",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_SEAT_FRONT_LEFT_MEMEORY_EXPORT",
+                                "functionValue": "0",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTSEATBACKCUSHIONPOSITIONCTRL",
+                                "functionValue": "30",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTSEATCUSHIONANGLEPOSITIONCTRL",
+                                "functionValue": "30",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTSEATFRONTBACKPOSITIONCTRL",
+                                "functionValue": "30",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTSEATHEIGHTPOSITIONCTRL",
+                                "functionValue": "30",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "b4a3ab22bfa84b35bd17fdf2aa388436",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTMASSAGESTRENGTHCTRL",
+                                "functionValue": "2",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "52295173756a4a2c99c316290eaac77e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_VOICE_TTS",
+                                "functionValue": "现在闭上眼睛，放松，慢慢呼吸，你正在变得越来越放松了，想象一下现在躺在一片草地上，周围十分安静。",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "c9cdd5f3cd394de3b96a740736b6426e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_HIPHI_DELAY",
+                                "functionValue": "60",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "2a77af74e61c4b71bd38d72997c70c9e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-ACM_DRIVETEMPCTRL",
+                                "functionValue": "25",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "5dfa2d7217ff4f6c81a16da1f577536c",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTRIGHTHEATGEARCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTHEATGEARCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_REARLEFTHEATGEARCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_REARRIGHTHEATGEARCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "2159bf4befa7465a879e50b039f9bdcf",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_REARLEFTVENTILATIONCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_REARRIGHTVENTILATIONCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTVENTILATIONCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTRIGHTVENTILATIONCTRL",
+                                "functionValue": "1",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "24d07c4d7dad4bb288845453088d4072",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_PLAY_STOP",
+                                "functionValue": "",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "9bfc7825b9ad4c78ba126c026d119c31",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_VOLUME",
+                                "functionValue": "0",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "c9cdd5f3cd394de3b96a740736b6426e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_HIPHI_DELAY",
+                                "functionValue": "600",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "52295173756a4a2c99c316290eaac77e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_VOICE_TTS",
+                                "functionValue": "时间到了，先不着急起身，请跟随环境的变化慢慢唤醒自己",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "ebfb5febd96d4f778d78a3dc41a47a85",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_PLAY_CONTINUE",
+                                "functionValue": "",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "9bfc7825b9ad4c78ba126c026d119c31",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_MEDIA_VOLUME",
+                                "functionValue": "2",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "487d5b55cff948fbb76f7f34300bf690",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_IDCM_BRIGHTNESS",
+                                "functionValue": "10",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "b4a3ab22bfa84b35bd17fdf2aa388436",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FRONTLEFTMASSAGESTRENGTHCTRL",
+                                "functionValue": "2",
+                                "urls": []
+                            },
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-SEAT_FLSEATMASSAGEMODE_CMD",
+                                "functionValue": "3",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": ""
+            },
+            {
+                "actionType": 1,
+                "condition": "",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "c9cdd5f3cd394de3b96a740736b6426e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_HIPHI_DELAY",
+                                "functionValue": "120",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": "Condition-DLP_ACTLGEARST#==#0#||#Condition-ADAS_DISPLAYVEHICLESPEED#==#0"
+            },
+            {
+                "actionType": 1,
+                "condition": "Trigger-SEAT_ACU_DRIVERSEATBELT_ST#==#1",
+                "conditionType": null,
+                "functionList": [
+                    {
+                        "classificationCode": "52295173756a4a2c99c316290eaac77e",
+                        "functionDetailList": [
+                            {
+                                "coverUrl": "",
+                                "cycleCount": 0,
+                                "functionCode": "Function-FUNCTION_VOICE_TTS",
+                                "functionValue": "舒眠已结束，将为您恢复环境，谢谢使用",
+                                "urls": []
+                            }
+                        ]
+                    }
+                ],
+                "trigger": "Condition-DLP_ACTLGEARST#==#0#&&#Condition-ADAS_DISPLAYVEHICLESPEED#==#0#&&#Condition-SEAT_FRONTLEFTSOFTPOINTPOSITIONENABLE#==#1"
+            }
+        ],
+        "addSum": 1,
+        "appealReason": "",
+        "appealStatus": 1,
+        "auditReason": "",
+        "auditStatus": null,
+        "auditTime": null,
+        "auditUser": "",
+        "authorIcon": "",
+        "autoExec": 2,
+        "autoRun": 2,
+        "befName": "",
+        "condition": "Condition-DLP_ACTLGEARST#==#0#||#Condition-ADAS_DISPLAYVEHICLESPEED#==#0#||#Condition-SEAT_FRONTLEFTSOFTPOINTPOSITIONENABLE#==#1",
+        "containBot": 2,
+        "contributeStatus": 0,
+        "contributeTime": null,
+        "createTime": 1665207414000,
+        "createTimeStr": "",
+        "executeStatus": 0,
+        "failReason": "",
+        "fastScene": 2,
+        "fastTime": null,
+        "frontCover": 0,
+        "interrupt": "Trigger-SEAT_ACU_DRIVERSEATBELT_ST#==#1",
+        "introduction": "过程分为“帮助入睡、睡意来临、浅睡眠、唤醒、恢复”5个阶段，将调整座椅，播放音乐，并用语音引导您休息",
+        "name": "舒眠SPA",
+        "nickName": "HiPhi Play",
+        "parentId": "",
+        "preset": 1,
+        "reportStatus": 0,
+        "restore": 1,
+        "sceneId": "a42bd58cc7e64b38ae0ec18b8fb96ccc",
+        "sortNumber": null,
+        "sourceType": 2,
+        "superId": "",
+        "trigger": "Trigger-TRIGGER_TIME_MOMENT#obj#eyJ3ZWVrIjpbMSwyLDMsNCw1XSwidGltZSI6IjEyOjAwIn0=",
+        "type": 1,
+        "updateTime": 1675072787000,
+        "updateTimeStr": "",
+        "updateUser": "Rachel1",
+        "useSum": 23,
+		"priority": 1
+    },
+    "msg": "SUCCESS"
+}

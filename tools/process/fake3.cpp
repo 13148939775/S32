@@ -1,0 +1,18 @@
+#include <iostream>
+#include <thread>
+#include <chrono>
+
+inline void WaitForShutdown() {
+  while (!false) {
+    std::this_thread::sleep_for(std::chrono::milliseconds(1));
+  }
+}
+
+// entry for start as an services
+int main(int argc, char * argv[])
+{
+    std::cout << "entry c" << std::endl;
+    WaitForShutdown();
+
+    return 0;
+}

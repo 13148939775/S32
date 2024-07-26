@@ -1,0 +1,10 @@
+{
+    "data": {
+        "url": "https://iovcloud-test.human-horizons.com:30593/user-core-data-service/v1/idcm/login/vehicleLogin/v1.0.1",
+        "path": "/user-core-data-service/v1/idcm/login/vehicleLogin/v1.0.1",
+        "vin": "HRYTTESTVINMGM270",
+        "sn": "HRYTTESTVINID0270",
+        "lng": "0",
+        "lat": "0"
+    }
+}

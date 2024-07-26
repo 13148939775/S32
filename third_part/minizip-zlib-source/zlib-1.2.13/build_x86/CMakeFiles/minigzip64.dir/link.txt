@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/minigzip64.dir/test/minigzip.o  -o minigzip64  -Wl,-rpath,/home/miaow/work/S32G-UP/s32-Apps/third_part/minizip-ng-1.2/zlib-1.2.13/build_x86 libz.so.1.2.13 

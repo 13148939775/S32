@@ -1,0 +1,181 @@
+{
+    "versionInfo": {
+        "version": 1.0,
+        "date": 2003327,
+        "TotalCategories" : 8
+    },
+    "topics" : [
+        {
+            "name" : "HDBM_DrLth_St",
+            "id" : 1,
+            "type": -1,
+            "description" : "车窗设置" ,
+            "update_date": 1 ,
+            "trigger" : false ,
+            "sendStrategy" : 0 ,
+            "priority" : 0, 
+            "category" : [
+                {
+                    "name" : "车窗设置指令",
+                    "topicContext":
+                    [
+                        { 
+                            "topicType" : 4,
+                            "topicState": 0,
+                            "topicValue": 0
+                        },
+                        {
+                            "topicType" : 4,
+                            "topicState": 1,
+                            "topicValue": 1
+                        },
+                        {
+                            "topicType" : 4,
+                            "topicState": 2,
+                            "topicValue": 2
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 0,
+                            "topicValue": 0
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 1,
+                            "topicValue": 3
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 2,
+                            "topicValue": 255
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "HDBI_PowerModeReq",
+            "id" : 1,
+            "type": -1,
+            "description" : "上下电控制" ,
+            "update_date": 1 ,
+            "trigger" : true ,
+            "sendStrategy" : 0,
+            "priority" : 0, 
+            "category" : [
+                {
+                    "name" : "上下电控制",
+                    "topicContext":
+                    [
+                        { 
+                            "topicType" : 4,
+                            "topicState": 0,
+                            "topicValue": 0
+                        } ,
+                        {
+                            "topicType" : 4,
+                            "topicState": 1,
+                            "topicValue": 1
+                        } ,
+                        {
+                            "topicType" : 4,
+                            "topicState": 2,
+                            "topicValue": 2
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 0,
+                            "topicValue": 0
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 1,
+                            "topicValue": 3
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 2,
+                            "topicValue": 255
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "HDBM_GeneralVehSt",
+            "id" : 1,
+            "type": -1,
+            "description" : "通用整车状态" ,
+            "update_date": 1 ,
+            "trigger" : false ,
+            "sendStrategy" : 2,
+            "priority" : 0, 
+            "category" : [
+                {
+                    "name" : "通用整车状态",
+                    "topicContext":
+                    [
+                        { 
+                            "topicType" : 8,
+                            "topicState": 0,
+                            "topicValue": 254
+                        } ,
+                        {
+                            "topicType" : 4,
+                            "topicState": 0,
+                            "topicValue": 254
+                        } ,
+                        {
+                            "topicType" : 2,
+                            "topicState": 0,
+                            "topicValue": 254
+                        },
+                        {
+                            "topicType" : 1,
+                            "topicState": 0,
+                            "topicValue": 254
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name" : "HDBM_PowerModeRsp",
+            "id" : 1,
+            "type": -1,
+            "description" : "上下电控制应答" ,
+            "update_date": 1 ,
+            "trigger" : true ,
+            "sendStrategy" : 0,
+            "priority" : 0, 
+            "category" : [
+                {
+                    "name" : "上下电控制应答",
+                    "topicContext":
+                    [
+                        { 
+                            "topicType" : 8,
+                            "topicState": 0,
+                            "topicValue": 0
+                        } ,
+                        {
+                            "topicType" : 8,
+                            "topicState": 1,
+                            "topicValue": 0
+                        } ,
+                        {
+                            "topicType" : 8,
+                            "topicState": 2,
+                            "topicValue": 5
+                        },
+                        {
+                            "topicType" : 8,
+                            "topicState": 3,
+                            "topicValue": 255
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

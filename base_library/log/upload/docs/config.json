@@ -1,0 +1,16 @@
+{
+    "version":1.0,
+    "logrt_host":"https://iovcloud-test.human-horizons.com:8443",
+    "logrt_service_name":"/vehicle-logtracker-service",
+    "logrt_download_upload_rule":"/v1.0/ecu/log/getLogUploadRule/1.0.0",
+    "logrt_get_obs_path":"/v1.0/ecu/log/getObsConfig/1.0.0",
+    "logrt_upload_record_to_tsp":"/v1.0/ecu/log/addEcuLogRecord/1.0.0",
+    "logfile_path":"/home/root/log",
+    "flagTest":false,
+    "maxSizeInGB":9,
+    "fileCount":10,
+    "upload_files_num_eachtime":10,
+    "intervalTime":10,
+    "delete_source_file":true,
+    "delete_compressed_file":true
+}

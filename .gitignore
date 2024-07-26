@@ -1,0 +1,8 @@
+/build
+/build_aarch64
+/bin
+/bin_aarch64
+/.vscode
+.cache
+build_x86_64.sh
+.clang-format

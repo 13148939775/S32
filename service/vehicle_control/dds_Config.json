@@ -1,0 +1,16 @@
+{
+	"DDS_DefDate": "20231024",
+	"DDS_Version": "DDS_V_06",
+	"DDS_IPConfig":{
+		"DDS_Address":"127.0.0.1",
+		"VCC_Address": "127.0.0.1",
+		"DDSClientRecv_Port":10000,
+		"DDSClientRecv2_Port":10010,
+		"DDSClientSend_Port":10000,
+		"DDSServerRecv_Port":9998,
+		"DDSServerSend_Port":9998,
+		"DDSServerSend2_Port":10010,
+		"DDSServerToIPCF_Port":9996
+
+	}
+}

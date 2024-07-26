@@ -1,0 +1,1479 @@
+Triggers:
+- Id: 1
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3|E4|E5|E6|E7|E8|E9|E10|E11|E12|E13|E14
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 9
+    Duration: 0
+    Expression: unavailableReason=0x9
+  - Name: E2
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 10
+    Duration: 0
+    Expression: unavailableReason=0xA
+  - Name: E3
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 11
+    Duration: 0
+    Expression: unavailableReason=0xB
+  - Name: E4
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 12
+    Duration: 0
+    Expression: unavailableReason=0xC
+  - Name: E5
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 13
+    Duration: 0
+    Expression: unavailableReason=0xD
+  - Name: E6
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 14
+    Duration: 0
+    Expression: unavailableReason=0xE
+  - Name: E7
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 15
+    Duration: 0
+    Expression: unavailableReason=0xF
+  - Name: E8
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 16
+    Duration: 0
+    Expression: unavailableReason=0x10
+  - Name: E9
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 17
+    Duration: 0
+    Expression: unavailableReason=0x11
+  - Name: E10
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 18
+    Duration: 0
+    Expression: unavailableReason=0x12
+  - Name: E11
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 19
+    Duration: 0
+    Expression: unavailableReason=0x13
+  - Name: E12
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 25
+    Duration: 0
+    Expression: unavailableReason=0x19
+  - Name: E13
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 27
+    Duration: 0
+    Expression: unavailableReason=0x1B
+  - Name: E14
+    Signal: DataLogging4.longControlOutput.unavailableReason
+    Policy: EqualTo
+    Expected: 43
+    Duration: 0
+    Expression: unavailableReason=0x2B
+- Id: 2
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.longControlOutput.accMode
+    Policy: EqualTo
+    Expected: 10
+    Duration: 0
+    Expression: accMode=10(failure)
+- Id: 3
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.longControlOutput.automaticDisEngagement
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: automaticDisEngagement=0x1
+- Id: 4
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.longControlOutput.accelReq
+    Policy: GreaterThan
+    Expected: 2.5f
+    Duration: 2000
+    Expression: accelReq>2.5m/s2last2s
+  - Name: E2
+    Signal: DataLogging4.longControlOutput.accelReq
+    Policy: LessThan
+    Expected: -4
+    Duration: 2000
+    Expression: accelReq<-4m/s2last2s
+- Id: 5
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: PboxMgrInfo.pboxMgrIMU.accX
+    Policy: GreaterThan
+    Expected: 2.5f
+    Duration: 2000
+    Expression: HPPM_IMU_Acc_X>2.5m/s2last2s(TBD)
+- Id: 6
+  Function: LongCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.imuSecondary.accelLong
+    Policy: GreaterThan
+    Expected: 2.5f
+    Duration: 2000
+    Expression: ACU_LongitudeAcceleration>2.5m/s2last2s(TBD)
+- Id: 7
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging3.lateralControlOutput.lccUnavailableReason
+    Policy: NotEqualTo
+    Expected: 80
+    Duration: 0
+    Expression: lccUnavailableReason~=0x50
+- Id: 8
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging3.lateralControlOutput.state
+    Policy: EqualTo
+    Expected: 10
+    Duration: 0
+    Expression: state=10(failure)
+- Id: 9
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: (E1|E2)&E3
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging3.lateralControlOutput.strWhlTorqueReq
+    Policy: GreaterThan
+    Expected: 3
+    Duration: 0
+    Expression: strWhlTorqueReq>3Nm
+  - Name: E2
+    Signal: DataLogging3.lateralControlOutput.strWhlTorqueReq
+    Policy: LessThan
+    Expected: -3
+    Duration: 0
+    Expression: strWhlTorqueReq<-3Nm
+  - Name: E3
+    Signal: ESAInfo.egoEgoStatus.velocityX
+    Policy: GreaterThan
+    Expected: 60
+    Duration: 0
+    Expression: VehicleSpeed>60kph
+- Id: 10
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: (E1|E2)&E3
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging3.lateralControlOutput.strWhlTorqueReq
+    Policy: GreaterThan
+    Expected: 3.6f
+    Duration: 0
+    Expression: strWhlTorqueReq>3.6Nm
+  - Name: E2
+    Signal: DataLogging3.lateralControlOutput.strWhlTorqueReq
+    Policy: LessThan
+    Expected: -3.6f
+    Duration: 0
+    Expression: strWhlTorqueReq<-3.6Nm
+  - Name: E3
+    Signal: ESAInfo.egoEgoStatus.velocityX
+    Policy: LessThan
+    Expected: 60
+    Duration: 0
+    Expression: VehicleSpeed>60kph
+- Id: 11
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging3.lateralControlOutput.strWhlTorqueReq
+    Policy: DiffGreaterThan
+    Expected: 0.12f
+    Duration: 0
+    Expression: diff(strWhlTorqueReq)>TBD
+- Id: 12
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: PboxMgrInfo.pboxMgrIMU.accY
+    Policy: GreaterThan
+    Expected: 1.5f
+    Duration: 2000
+    Expression: HPPM_IMU_Acc_Y>1.5m/s2last2s(TBD)
+- Id: 13
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.imuSecondary.accelLateral
+    Policy: GreaterThan
+    Expected: 1.5f
+    Duration: 2000
+    Expression: ACU_LateralAcceleration>1.5m/s2last2s(TBD)
+- Id: 14
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.escInfo.TCSIntervention
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ESC_TCSIntervention==0x1
+- Id: 15
+  Function: LatCtrl
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.escInfo.VDCIntervention
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ESC_VDCIntervention==0x1
+- Id: 16
+  Function: ALS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3|E4|E5|E6
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.lksInfo.lksStatus
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: lksStatus=0x3
+  - Name: E2
+    Signal: DataLogging4.lksInfo.lksLeftActiveSt
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: lksLeftActiveSt=0x2
+  - Name: E3
+    Signal: DataLogging4.lksInfo.lksLeftActiveSt
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: lksLeftActiveSt=0x3
+  - Name: E4
+    Signal: DataLogging4.lksInfo.lksRightActiveSt
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: lksRightActiveSt=0x2
+  - Name: E5
+    Signal: DataLogging4.lksInfo.lksRightActiveSt
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: lksRightActiveSt=0x3
+  - Name: E6
+    Signal: DataLogging4.lksInfo.lksStatus
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: lksStatus=0x4failure
+- Id: 17
+  Function: AECS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3|E4|E5|E6
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 5
+    Duration: 0
+    Expression: aecsMode=0x5
+  - Name: E2
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 6
+    Duration: 0
+    Expression: aecsMode=0x6
+  - Name: E3
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 7
+    Duration: 0
+    Expression: aecsMode=0x7
+  - Name: E4
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 8
+    Duration: 0
+    Expression: aecsMode=0x8
+  - Name: E5
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 9
+    Duration: 0
+    Expression: aecsMode=0x9
+  - Name: E6
+    Signal: DataLogging4.aebOutput.aecsMode
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: aecsMode=0x1(failure)
+- Id: 18
+  Function: AECS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.aebOutput.fcwMode
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: fcwMode=0x4
+  - Name: E2
+    Signal: DataLogging4.aebOutput.fcwMode
+    Policy: EqualTo
+    Expected: 5
+    Duration: 0
+    Expression: fcwMode=0x5
+  - Name: E3
+    Signal: DataLogging4.aebOutput.fcwMode
+    Policy: EqualTo
+    Expected: 6
+    Duration: 0
+    Expression: fcwMode=0x6
+- Id: 19
+  Function: AECS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.acuInfo.acuFrontCrashOutputSt
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: acuFrontCrashOutputSt=0x1:Crash
+  - Name: E2
+    Signal: DataLogging5.acuInfo.acuDriverSideCrashOutputSt
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: acuDriverSideCrashOutputSt=0x1:Crash
+  - Name: E3
+    Signal: DataLogging5.acuInfo.acuPassengerSideCrashOutputSt
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: acuPassengerSideCrashOutputSt=0x1:Crash
+  - Name: E4
+    Signal: DataLogging5.acuInfo.acuRearSideCrashOutputSt
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: acuRearSideCrashOutputSt=0x1:Crash
+- Id: 20
+  Function: AECS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.brakeSysInfoESC.MasterCylinderPressure
+    Policy: GreaterThan
+    Expected: 10
+    Duration: 0
+    Expression: ESC_MasterCylinderPressure>10Bar(TBD)
+- Id: 21
+  Function: AECE
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging1.csmInfo.CSM_SAS_SteeringWheelAngle
+    Policy: GreaterThan
+    Expected: 100
+    Duration: 0
+    Expression: SAS_SteeringWheelAngle>TBD
+  - Name: E2
+    Signal: DataLogging1.csmInfo.CSM_SAS_SteeringWheelSpeed
+    Policy: GreaterThan
+    Expected: 360
+    Duration: 0
+    Expression: SAS_SteeringWheelSpeed>TBD
+- Id: 22
+  Function: AECS
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.brakeSysInfoESC.DrvReqFxBrkDomAvail
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ESC_isDrvReqFxBrakeDom==0x1
+- Id: 23
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.lcaInfo.warnLeftLCA
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnLeftLCA=0x1
+  - Name: E2
+    Signal: DataLogging4.lcaInfo.warnLeftLCA
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnLeftLCA=0x2
+- Id: 24
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.lcaInfo.warnRightLCA
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnRightLCA=0x1
+  - Name: E2
+    Signal: DataLogging4.lcaInfo.warnRightLCA
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnRightLCA=0x2
+- Id: 25
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.dowInfo.warnFLDOW
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnFLDOW=0x1
+  - Name: E2
+    Signal: DataLogging4.dowInfo.warnFLDOW
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnFLDOW=0x2
+- Id: 26
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.dowInfo.warnRLDOW
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnRLDOW=0x1
+  - Name: E2
+    Signal: DataLogging4.dowInfo.warnRLDOW
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnRLDOW=0x2
+- Id: 27
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.dowInfo.warnFRDOW
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnFRDOW=0x1
+  - Name: E2
+    Signal: DataLogging4.dowInfo.warnFRDOW
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnFRDOW=0x2
+- Id: 28
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.dowInfo.warnRRDOW
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnRRDOW=0x1
+  - Name: E2
+    Signal: DataLogging4.dowInfo.warnRRDOW
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnRRDOW=0x2
+- Id: 29
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.rcwInfo.warnRCW
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: warnRCW=0x1
+  - Name: E2
+    Signal: DataLogging4.rcwInfo.warnRCW
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: warnRCW=0x2
+- Id: 30
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.lcaInfo.stateLCA
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: stateLCA=0x4
+- Id: 31
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.dowInfo.stateDOW
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: stateDOW=0x4
+- Id: 32
+  Function: RSCA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging4.rcwInfo.stateRCW
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: stateRCW=0x4
+- Id: 10001
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3|E4|E5|E6
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: apaParkingState=0x1
+  - Name: E2
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 2
+    Duration: 0
+    Expression: apaParkingState=0x2
+  - Name: E3
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: apaParkingState=0x3
+  - Name: E4
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: apaParkingState=0x4
+  - Name: E5
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 5
+    Duration: 0
+    Expression: apaParkingState=0x5
+  - Name: E6
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 6
+    Duration: 0
+    Expression: apaParkingState=0x6
+- Id: 10002
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaFrontPMAEBSt
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: apaFrontPMAEBSt=0x4
+  - Name: E2
+    Signal: DataLogging5.apaStatus.apaFrontPMAEBSt
+    Policy: EqualTo
+    Expected: 6
+    Duration: 0
+    Expression: apaFrontPMAEBSt=0x6
+  - Name: E3
+    Signal: DataLogging5.apaStatus.apaFrontPMAEBSt
+    Policy: EqualTo
+    Expected: 7
+    Duration: 0
+    Expression: apaFrontPMAEBSt=0x7
+- Id: 10003
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1|E2|E3
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaRearPMAEBSt
+    Policy: EqualTo
+    Expected: 4
+    Duration: 0
+    Expression: apaRearPMAEBSt=0x4
+  - Name: E2
+    Signal: DataLogging5.apaStatus.apaRearPMAEBSt
+    Policy: EqualTo
+    Expected: 6
+    Duration: 0
+    Expression: apaRearPMAEBSt=0x6
+  - Name: E3
+    Signal: DataLogging5.apaStatus.apaRearPMAEBSt
+    Policy: EqualTo
+    Expected: 7
+    Duration: 0
+    Expression: apaRearPMAEBSt=0x7
+- Id: 10004
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaSVSActiveSt
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: apaSVSActiveSt=0x1
+- Id: 10005
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+- Id: 10007
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+- Id: 10008
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+- Id: 10009
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+- Id: 10010
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+- Id: 10011
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+- Id: 10012
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ActlGear=0x3
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+- Id: 10013
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.3f
+    Duration: 0
+    Expression: ''
+- Id: 10014
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.4f
+    Duration: 0
+    Expression: ''
+- Id: 10015
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.5f
+    Duration: 0
+    Expression: ''
+- Id: 10016
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.6f
+    Duration: 0
+    Expression: ''
+- Id: 10017
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.7f
+    Duration: 0
+    Expression: ''
+- Id: 10018
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&E2&E3&(E4|E5|E6|E7)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaAVMActivationDistanceFD
+    Policy: EqualTo
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging1.vdcmInfo.ActlGear
+    Policy: EqualTo
+    Expected: 1
+    Duration: 0
+    Expression: ActlGear=0x1
+  - Name: E3
+    Signal: DataLogging5.vehicleDynamic.VehicleSpeed_ASILD
+    Policy: LessThan
+    Expected: 18
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: LessThan
+    Expected: 0.8f
+    Duration: 0
+    Expression: ''
+- Id: 10019
+  Function: APA
+  PreTrigger: 5000
+  PostTrigger: 5000
+  Logic: E1&(E2|E3|E4|E5|E6|E7|E8|E9|E10|E11|E12|E13|E14|E15|E16|E17)
+  TriggerMaxTimes: 1000
+  Evaluators:
+  - Name: E1
+    Signal: DataLogging5.apaStatus.apaParkingState
+    Policy: EqualTo
+    Expected: 3
+    Duration: 0
+    Expression: ''
+  - Name: E2
+    Signal: DataLogging7.apaInfo.apaPASFLDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E3
+    Signal: DataLogging7.apaInfo.apaPASFMLDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E4
+    Signal: DataLogging7.apaInfo.apaPASFMRDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E5
+    Signal: DataLogging7.apaInfo.apaPASFRDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E6
+    Signal: DataLogging7.apaInfo.apaPASRLDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E7
+    Signal: DataLogging7.apaInfo.apaPASRRDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E8
+    Signal: DataLogging7.apaInfo.apaPASRMLDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E9
+    Signal: DataLogging7.apaInfo.apaPASRMRDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E10
+    Signal: DataLogging7.apaInfo.apaSDWFLSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E11
+    Signal: DataLogging7.apaInfo.apaSDWFRSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E12
+    Signal: DataLogging7.apaInfo.apaSDWRLSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E13
+    Signal: DataLogging7.apaInfo.apaSDWRRSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E14
+    Signal: DataLogging7.apaInfo.apaSDWFMLSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E15
+    Signal: DataLogging7.apaInfo.apaSDWFMRSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E16
+    Signal: DataLogging7.apaInfo.apaSDWRMLSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
+  - Name: E17
+    Signal: DataLogging7.apaInfo.apaSDWRMRSideDistance
+    Policy: DiffGreaterThan
+    Expected: 30
+    Duration: 0
+    Expression: ''
